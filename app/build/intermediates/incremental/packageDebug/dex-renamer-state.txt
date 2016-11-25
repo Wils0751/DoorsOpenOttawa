@@ -1,0 +1,7 @@
+#Tue Nov 22 20:32:51 EST 2016
+base.0=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_3ab9f5d945af21cd94eef1f8b246e951474d15be
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_9c661dcc2d4dcd2d8f89a24cce889c95771e528e/classes.dex
+base.1=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_9c661dcc2d4dcd2d8f89a24cce889c95771e528e
+file.0=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_3ab9f5d945af21cd94eef1f8b246e951474d15be/classes.dex

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Doors Open Ottawa</string>
+    <string name="get_data">Get data</string>
+    <string name="building_name_placeholder">Building name</string>
+    <string name="action_about">About</string>
+    <string name="author">Shannon Wilson, Geemakun Storey (Wils0751 , Stor0095)</string>
+</resources>

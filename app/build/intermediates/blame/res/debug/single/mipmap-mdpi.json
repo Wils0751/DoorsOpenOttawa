@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher.png",
+        "source": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/merged/debug/mipmap-mdpi/doorsopen.png",
+        "source": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/src/main/res/mipmap-mdpi/doorsopen.png"
+    }
+]
