@@ -15,10 +15,12 @@ ADDED from /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/src/main/A
 		INJECTED from /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/src/main/AndroidManifest.xml:5:5-79
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.4.0/AndroidManifest.xml:20:5-78
 	android:name
 		ADDED from /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/src/main/AndroidManifest.xml:5:22-76
 uses-permission#android.permission.INTERNET
 ADDED from /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/src/main/AndroidManifest.xml:6:5-67
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.4.0/AndroidManifest.xml:21:5-66
 	android:name
 		ADDED from /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/src/main/AndroidManifest.xml:6:22-64
 application
@@ -27,8 +29,9 @@ MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/ShannonWilson/Docum
 MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-v4:23.4.0] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-maps:6.5.87] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/6.5.87/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-base:6.5.87] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.4.0/AndroidManifest.xml:27:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/AndroidManifest.xml:19:5-20
 	android:label
 		ADDED from /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/src/main/AndroidManifest.xml:11:9-41
 	android:supportsRtl
@@ -69,8 +72,10 @@ MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/ShannonWilson/Docum
 MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:5:5-44
 MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
 MERGED from [com.android.support:support-v4:23.4.0] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-maps:6.5.87] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/6.5.87/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:6.5.87] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.4.0/AndroidManifest.xml:26:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/AndroidManifest.xml:18:5-42
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:23.4.0] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
@@ -79,9 +84,15 @@ MERGED from [com.google.android.gms:play-services-base:6.5.87] /Users/ShannonWil
 	android:minSdkVersion
 		INJECTED from /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/src/main/AndroidManifest.xml
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:8.4.0] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.4.0/AndroidManifest.xml:22:5-24:33
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:8.4.0] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.4.0/AndroidManifest.xml:23:8-40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:8.4.0] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.4.0/AndroidManifest.xml:24:8-31
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-base:6.5.87] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/AndroidManifest.xml:21:9-23:69
+ADDED from [com.google.android.gms:play-services-basement:8.4.0] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:21:9-23:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-base:6.5.87] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/AndroidManifest.xml:23:13-66
+		ADDED from [com.google.android.gms:play-services-basement:8.4.0] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:23:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:6.5.87] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/AndroidManifest.xml:22:13-58
+		ADDED from [com.google.android.gms:play-services-basement:8.4.0] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:22:13-58

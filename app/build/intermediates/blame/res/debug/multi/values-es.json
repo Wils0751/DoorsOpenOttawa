@@ -368,17 +368,17 @@
                     "startLine": 21,
                     "startColumn": 4,
                     "startOffset": 2072,
-                    "endColumn": 162,
-                    "endOffset": 2230
+                    "endColumn": 288,
+                    "endOffset": 2356
                 },
                 "from": {
-                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-es/common_strings.xml",
+                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml",
                     "position": {
-                        "startLine": 6,
+                        "startLine": 24,
                         "startColumn": 4,
-                        "startOffset": 691,
-                        "endColumn": 162,
-                        "endOffset": 849
+                        "startOffset": 3675,
+                        "endColumn": 292,
+                        "endOffset": 3963
                     }
                 }
             },
@@ -386,18 +386,18 @@
                 "to": {
                     "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 2235,
-                    "endColumn": 156,
-                    "endOffset": 2387
+                    "startOffset": 2361,
+                    "endColumn": 138,
+                    "endOffset": 2495
                 },
                 "from": {
-                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-es/common_strings.xml",
+                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml",
                     "position": {
-                        "startLine": 19,
+                        "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 2747,
-                        "endColumn": 156,
-                        "endOffset": 2899
+                        "startOffset": 1386,
+                        "endColumn": 138,
+                        "endOffset": 1520
                     }
                 }
             },
@@ -405,18 +405,18 @@
                 "to": {
                     "startLine": 23,
                     "startColumn": 4,
-                    "startOffset": 2392,
-                    "endColumn": 114,
-                    "endOffset": 2502
+                    "startOffset": 2500,
+                    "endColumn": 198,
+                    "endOffset": 2694
                 },
                 "from": {
-                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-es/common_strings.xml",
+                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml",
                     "position": {
-                        "startLine": 17,
+                        "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 2456,
-                        "endColumn": 114,
-                        "endOffset": 2566
+                        "startOffset": 1183,
+                        "endColumn": 202,
+                        "endOffset": 1381
                     }
                 }
             },
@@ -424,18 +424,18 @@
                 "to": {
                     "startLine": 24,
                     "startColumn": 4,
-                    "startOffset": 2507,
-                    "endColumn": 134,
-                    "endOffset": 2637
+                    "startOffset": 2699,
+                    "endColumn": 136,
+                    "endOffset": 2831
                 },
                 "from": {
-                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-es/common_strings.xml",
+                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml",
                     "position": {
-                        "startLine": 15,
+                        "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 2186,
-                        "endColumn": 134,
-                        "endOffset": 2316
+                        "startOffset": 1046,
+                        "endColumn": 136,
+                        "endOffset": 1178
                     }
                 }
             },
@@ -443,18 +443,18 @@
                 "to": {
                     "startLine": 25,
                     "startColumn": 4,
-                    "startOffset": 2642,
-                    "endColumn": 173,
-                    "endOffset": 2811
+                    "startOffset": 2836,
+                    "endColumn": 139,
+                    "endOffset": 2971
                 },
                 "from": {
-                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-es/common_strings.xml",
+                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml",
                     "position": {
-                        "startLine": 14,
+                        "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 2012,
-                        "endColumn": 173,
-                        "endOffset": 2181
+                        "startOffset": 906,
+                        "endColumn": 139,
+                        "endOffset": 1041
                     }
                 }
             },
@@ -462,18 +462,18 @@
                 "to": {
                     "startLine": 26,
                     "startColumn": 4,
-                    "startOffset": 2816,
-                    "endColumn": 132,
-                    "endOffset": 2944
+                    "startOffset": 2976,
+                    "endColumn": 222,
+                    "endOffset": 3194
                 },
                 "from": {
-                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-es/common_strings.xml",
+                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml",
                     "position": {
-                        "startLine": 13,
+                        "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 1879,
-                        "endColumn": 132,
-                        "endOffset": 2007
+                        "startOffset": 453,
+                        "endColumn": 226,
+                        "endOffset": 675
                     }
                 }
             },
@@ -481,18 +481,18 @@
                 "to": {
                     "startLine": 27,
                     "startColumn": 4,
-                    "startOffset": 2949,
-                    "endColumn": 170,
-                    "endOffset": 3115
+                    "startOffset": 3199,
+                    "endColumn": 221,
+                    "endOffset": 3416
                 },
                 "from": {
-                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-es/common_strings.xml",
+                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml",
                     "position": {
-                        "startLine": 8,
+                        "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 1032,
-                        "endColumn": 174,
-                        "endOffset": 1202
+                        "startOffset": 680,
+                        "endColumn": 225,
+                        "endOffset": 901
                     }
                 }
             },
@@ -500,18 +500,18 @@
                 "to": {
                     "startLine": 28,
                     "startColumn": 4,
-                    "startOffset": 3120,
-                    "endColumn": 135,
-                    "endOffset": 3251
+                    "startOffset": 3421,
+                    "endColumn": 138,
+                    "endOffset": 3555
                 },
                 "from": {
-                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-es/common_strings.xml",
+                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml",
                     "position": {
-                        "startLine": 12,
+                        "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 1743,
-                        "endColumn": 135,
-                        "endOffset": 1874
+                        "startOffset": 314,
+                        "endColumn": 138,
+                        "endOffset": 448
                     }
                 }
             },
@@ -519,18 +519,18 @@
                 "to": {
                     "startLine": 29,
                     "startColumn": 4,
-                    "startOffset": 3256,
-                    "endColumn": 201,
-                    "endOffset": 3453
+                    "startOffset": 3560,
+                    "endColumn": 184,
+                    "endOffset": 3740
                 },
                 "from": {
-                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-es/common_strings.xml",
+                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml",
                     "position": {
-                        "startLine": 10,
+                        "startLine": 19,
                         "startColumn": 4,
-                        "startOffset": 1340,
-                        "endColumn": 201,
-                        "endOffset": 1537
+                        "startOffset": 2870,
+                        "endColumn": 184,
+                        "endOffset": 3050
                     }
                 }
             },
@@ -538,18 +538,18 @@
                 "to": {
                     "startLine": 30,
                     "startColumn": 4,
-                    "startOffset": 3458,
-                    "endColumn": 200,
-                    "endOffset": 3654
+                    "startOffset": 3745,
+                    "endColumn": 121,
+                    "endOffset": 3862
                 },
                 "from": {
-                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-es/common_strings.xml",
+                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml",
                     "position": {
-                        "startLine": 11,
+                        "startLine": 18,
                         "startColumn": 4,
-                        "startOffset": 1542,
-                        "endColumn": 200,
-                        "endOffset": 1738
+                        "startOffset": 2748,
+                        "endColumn": 121,
+                        "endOffset": 2865
                     }
                 }
             },
@@ -557,18 +557,18 @@
                 "to": {
                     "startLine": 31,
                     "startColumn": 4,
-                    "startOffset": 3659,
-                    "endColumn": 132,
-                    "endOffset": 3787
+                    "startOffset": 3867,
+                    "endColumn": 197,
+                    "endOffset": 4060
                 },
                 "from": {
-                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-es/common_strings.xml",
+                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml",
                     "position": {
-                        "startLine": 9,
+                        "startLine": 17,
                         "startColumn": 4,
-                        "startOffset": 1207,
-                        "endColumn": 132,
-                        "endOffset": 1335
+                        "startOffset": 2550,
+                        "endColumn": 197,
+                        "endOffset": 2743
                     }
                 }
             },
@@ -576,18 +576,18 @@
                 "to": {
                     "startLine": 32,
                     "startColumn": 4,
-                    "startOffset": 3792,
-                    "endColumn": 184,
-                    "endOffset": 3972
+                    "startOffset": 4065,
+                    "endColumn": 118,
+                    "endOffset": 4179
                 },
                 "from": {
-                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-es/common_strings.xml",
+                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml",
                     "position": {
-                        "startLine": 23,
+                        "startLine": 16,
                         "startColumn": 4,
-                        "startOffset": 3346,
-                        "endColumn": 184,
-                        "endOffset": 3526
+                        "startOffset": 2431,
+                        "endColumn": 118,
+                        "endOffset": 2545
                     }
                 }
             },
@@ -595,18 +595,18 @@
                 "to": {
                     "startLine": 33,
                     "startColumn": 4,
-                    "startOffset": 3977,
-                    "endColumn": 124,
-                    "endOffset": 4097
+                    "startOffset": 4184,
+                    "endColumn": 143,
+                    "endOffset": 4323
                 },
                 "from": {
-                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-es/common_strings.xml",
+                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml",
                     "position": {
-                        "startLine": 22,
+                        "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 3221,
-                        "endColumn": 124,
-                        "endOffset": 3341
+                        "startOffset": 170,
+                        "endColumn": 143,
+                        "endOffset": 309
                     }
                 }
             },
@@ -614,18 +614,18 @@
                 "to": {
                     "startLine": 34,
                     "startColumn": 4,
-                    "startOffset": 4102,
-                    "endColumn": 177,
-                    "endOffset": 4275
+                    "startOffset": 4328,
+                    "endColumn": 175,
+                    "endOffset": 4499
                 },
                 "from": {
-                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-es/common_strings.xml",
+                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml",
                     "position": {
-                        "startLine": 7,
+                        "startLine": 28,
                         "startColumn": 4,
-                        "startOffset": 854,
-                        "endColumn": 177,
-                        "endOffset": 1027
+                        "startOffset": 4408,
+                        "endColumn": 175,
+                        "endOffset": 4579
                     }
                 }
             },
@@ -633,18 +633,18 @@
                 "to": {
                     "startLine": 35,
                     "startColumn": 4,
-                    "startOffset": 4280,
-                    "endColumn": 197,
-                    "endOffset": 4473
+                    "startOffset": 4504,
+                    "endColumn": 129,
+                    "endOffset": 4629
                 },
                 "from": {
-                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-es/common_strings.xml",
+                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml",
                     "position": {
-                        "startLine": 21,
+                        "startLine": 27,
                         "startColumn": 4,
-                        "startOffset": 3023,
-                        "endColumn": 197,
-                        "endOffset": 3216
+                        "startOffset": 4278,
+                        "endColumn": 129,
+                        "endOffset": 4403
                     }
                 }
             },
@@ -652,18 +652,18 @@
                 "to": {
                     "startLine": 36,
                     "startColumn": 4,
-                    "startOffset": 4478,
-                    "endColumn": 118,
-                    "endOffset": 4592
+                    "startOffset": 4634,
+                    "endColumn": 178,
+                    "endOffset": 4808
                 },
                 "from": {
-                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-es/common_strings.xml",
+                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml",
                     "position": {
-                        "startLine": 20,
+                        "startLine": 26,
                         "startColumn": 4,
-                        "startOffset": 2904,
-                        "endColumn": 118,
-                        "endOffset": 3018
+                        "startOffset": 4099,
+                        "endColumn": 178,
+                        "endOffset": 4273
                     }
                 }
             },
@@ -671,18 +671,18 @@
                 "to": {
                     "startLine": 37,
                     "startColumn": 4,
-                    "startOffset": 4597,
-                    "endColumn": 191,
-                    "endOffset": 4784
+                    "startOffset": 4813,
+                    "endColumn": 130,
+                    "endOffset": 4939
                 },
                 "from": {
-                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-es/common_strings.xml",
+                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 25,
                         "startColumn": 4,
-                        "startOffset": 310,
-                        "endColumn": 191,
-                        "endOffset": 497
+                        "startOffset": 3968,
+                        "endColumn": 130,
+                        "endOffset": 4094
                     }
                 }
             },
@@ -690,18 +690,18 @@
                 "to": {
                     "startLine": 38,
                     "startColumn": 4,
-                    "startOffset": 4789,
-                    "endColumn": 188,
-                    "endOffset": 4973
+                    "startOffset": 4944,
+                    "endColumn": 267,
+                    "endOffset": 5207
                 },
                 "from": {
-                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-es/common_strings.xml",
+                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/res/values-es/common_strings.xml",
                     "position": {
-                        "startLine": 5,
+                        "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 502,
-                        "endColumn": 188,
-                        "endOffset": 686
+                        "startOffset": 170,
+                        "endColumn": 271,
+                        "endOffset": 437
                     }
                 }
             },
@@ -709,18 +709,18 @@
                 "to": {
                     "startLine": 39,
                     "startColumn": 4,
-                    "startOffset": 4978,
-                    "endColumn": 139,
-                    "endOffset": 5113
+                    "startOffset": 5212,
+                    "endColumn": 280,
+                    "endOffset": 5488
                 },
                 "from": {
-                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-es/common_strings.xml",
+                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml",
                     "position": {
-                        "startLine": 3,
+                        "startLine": 21,
                         "startColumn": 4,
-                        "startOffset": 170,
-                        "endColumn": 139,
-                        "endOffset": 305
+                        "startOffset": 3183,
+                        "endColumn": 284,
+                        "endOffset": 3463
                     }
                 }
             },
@@ -728,18 +728,18 @@
                 "to": {
                     "startLine": 40,
                     "startColumn": 4,
-                    "startOffset": 5118,
-                    "endColumn": 162,
-                    "endOffset": 5276
+                    "startOffset": 5493,
+                    "endColumn": 127,
+                    "endOffset": 5616
                 },
                 "from": {
-                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-es/common_strings.xml",
+                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml",
                     "position": {
-                        "startLine": 24,
+                        "startLine": 20,
                         "startColumn": 4,
-                        "startOffset": 3531,
-                        "endColumn": 162,
-                        "endOffset": 3689
+                        "startOffset": 3055,
+                        "endColumn": 127,
+                        "endOffset": 3178
                     }
                 }
             },
@@ -747,18 +747,18 @@
                 "to": {
                     "startLine": 41,
                     "startColumn": 4,
-                    "startOffset": 5281,
-                    "endColumn": 267,
-                    "endOffset": 5544
+                    "startOffset": 5621,
+                    "endColumn": 110,
+                    "endOffset": 5727
                 },
                 "from": {
-                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-es/common_strings.xml",
+                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml",
                     "position": {
-                        "startLine": 26,
+                        "startLine": 22,
                         "startColumn": 4,
-                        "startOffset": 3823,
-                        "endColumn": 267,
-                        "endOffset": 4086
+                        "startOffset": 3468,
+                        "endColumn": 110,
+                        "endOffset": 3574
                     }
                 }
             },
@@ -766,18 +766,18 @@
                 "to": {
                     "startLine": 42,
                     "startColumn": 4,
-                    "startOffset": 5549,
-                    "endColumn": 128,
-                    "endOffset": 5673
+                    "startOffset": 5732,
+                    "endColumn": 201,
+                    "endOffset": 5929
                 },
                 "from": {
-                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-es/common_strings.xml",
+                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml",
                     "position": {
-                        "startLine": 25,
+                        "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 3694,
-                        "endColumn": 128,
-                        "endOffset": 3818
+                        "startOffset": 1663,
+                        "endColumn": 205,
+                        "endOffset": 1864
                     }
                 }
             },
@@ -785,18 +785,18 @@
                 "to": {
                     "startLine": 43,
                     "startColumn": 4,
-                    "startOffset": 5678,
-                    "endColumn": 110,
-                    "endOffset": 5784
+                    "startOffset": 5934,
+                    "endColumn": 137,
+                    "endOffset": 6067
                 },
                 "from": {
-                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-es/common_strings.xml",
+                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml",
                     "position": {
-                        "startLine": 27,
+                        "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 4091,
-                        "endColumn": 110,
-                        "endOffset": 4197
+                        "startOffset": 1525,
+                        "endColumn": 137,
+                        "endOffset": 1658
                     }
                 }
             },
@@ -804,18 +804,18 @@
                 "to": {
                     "startLine": 44,
                     "startColumn": 4,
-                    "startOffset": 5789,
-                    "endColumn": 175,
-                    "endOffset": 5960
+                    "startOffset": 6072,
+                    "endColumn": 227,
+                    "endOffset": 6295
                 },
                 "from": {
-                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-es/common_strings.xml",
+                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml",
                     "position": {
-                        "startLine": 18,
+                        "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 2571,
-                        "endColumn": 175,
-                        "endOffset": 2742
+                        "startOffset": 2199,
+                        "endColumn": 231,
+                        "endOffset": 2426
                     }
                 }
             },
@@ -823,18 +823,18 @@
                 "to": {
                     "startLine": 45,
                     "startColumn": 4,
-                    "startOffset": 5965,
-                    "endColumn": 134,
-                    "endOffset": 6095
+                    "startOffset": 6300,
+                    "endColumn": 138,
+                    "endOffset": 6434
                 },
                 "from": {
-                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-es/common_strings.xml",
+                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml",
                     "position": {
-                        "startLine": 16,
+                        "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 2321,
-                        "endColumn": 134,
-                        "endOffset": 2451
+                        "startOffset": 2060,
+                        "endColumn": 138,
+                        "endOffset": 2194
                     }
                 }
             },
@@ -842,18 +842,18 @@
                 "to": {
                     "startLine": 46,
                     "startColumn": 4,
-                    "startOffset": 6100,
-                    "endColumn": 95,
-                    "endOffset": 6191
+                    "startOffset": 6439,
+                    "endColumn": 190,
+                    "endOffset": 6625
                 },
                 "from": {
-                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-es/common_strings.xml",
+                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml",
                     "position": {
-                        "startLine": 30,
+                        "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 4416,
-                        "endColumn": 95,
-                        "endOffset": 4507
+                        "startOffset": 1869,
+                        "endColumn": 190,
+                        "endOffset": 2055
                     }
                 }
             },
@@ -861,18 +861,18 @@
                 "to": {
                     "startLine": 47,
                     "startColumn": 4,
-                    "startOffset": 6196,
-                    "endColumn": 98,
-                    "endOffset": 6290
+                    "startOffset": 6630,
+                    "endColumn": 95,
+                    "endOffset": 6721
                 },
                 "from": {
-                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-es/common_strings.xml",
+                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml",
                     "position": {
-                        "startLine": 28,
+                        "startLine": 23,
                         "startColumn": 4,
-                        "startOffset": 4202,
-                        "endColumn": 98,
-                        "endOffset": 4296
+                        "startOffset": 3579,
+                        "endColumn": 95,
+                        "endOffset": 3670
                     }
                 }
             },
@@ -880,18 +880,18 @@
                 "to": {
                     "startLine": 48,
                     "startColumn": 4,
-                    "startOffset": 6295,
-                    "endColumn": 114,
-                    "endOffset": 6405
+                    "startOffset": 6726,
+                    "endColumn": 98,
+                    "endOffset": 6820
                 },
                 "from": {
-                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/6.5.87/res/values-es/common_strings.xml",
+                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml",
                     "position": {
                         "startLine": 29,
                         "startColumn": 4,
-                        "startOffset": 4301,
-                        "endColumn": 114,
-                        "endOffset": 4411
+                        "startOffset": 4584,
+                        "endColumn": 98,
+                        "endOffset": 4678
                     }
                 }
             },
@@ -899,9 +899,28 @@
                 "to": {
                     "startLine": 49,
                     "startColumn": 4,
-                    "startOffset": 6410,
+                    "startOffset": 6825,
+                    "endColumn": 114,
+                    "endOffset": 6935
+                },
+                "from": {
+                    "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-es/base_strings.xml",
+                    "position": {
+                        "startLine": 30,
+                        "startColumn": 4,
+                        "startOffset": 4683,
+                        "endColumn": 114,
+                        "endOffset": 4793
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 50,
+                    "startColumn": 4,
+                    "startOffset": 6940,
                     "endColumn": 100,
-                    "endOffset": 6506
+                    "endOffset": 7036
                 },
                 "from": {
                     "file": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-es/values-es.xml",

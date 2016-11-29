@@ -9,6 +9,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -31,11 +32,14 @@ import java.util.List;
  *
  * @author Geemakun Storey (Stor0095), Shannon Wilson(Wils0751)
  */
-public class MainActivity extends ListActivity /*implements AdapterView.OnItemClickListener*/ {
+public class MainActivity extends ListActivity  /*implements AdapterView.OnItemClickListener*/ {
 
     // URL to my RESTful API Service hosted on my Bluemix account.
     public static final String IMAGES_BASE_URL = "https://doors-open-ottawa-hurdleg.mybluemix.net/";
     public static final String REST_URI = "https://doors-open-ottawa-hurdleg.mybluemix.net/buildings";
+    public static final String LOGOUT_URI ="http://doors-open-ottawa-hurdleg.mybluemix.net/users/logout";
+    private static final String TAG = "";
+    SwipeRefreshLayout mSwipeRefreshLayout;
 
     private AboutDialogFragment mAboutDialog;
 
@@ -53,6 +57,10 @@ public class MainActivity extends ListActivity /*implements AdapterView.OnItemCl
         pb = (ProgressBar) findViewById(R.id.progressBar);
         pb.setVisibility(View.INVISIBLE);
 
+        mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swiperefresh);
+
+
+
         tasks = new ArrayList<>();
         getListView().setChoiceMode(ListView.CHOICE_MODE_SINGLE);
         getListView().setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -69,9 +77,30 @@ public class MainActivity extends ListActivity /*implements AdapterView.OnItemCl
 
                 startActivity(intent);
             }
-
-
         });
+        mSwipeRefreshLayout.setOnRefreshListener(
+                new SwipeRefreshLayout.OnRefreshListener() {
+                    @Override
+                    public void onRefresh() {
+                        Log.i(TAG, "onRefresh called from SwipeRefreshLayout");
+
+                        // This method performs the actual data-refresh operation.
+                        // The method calls setRefreshing(false) when it's finished.
+                        if (isOnline()) {
+                            requestData(REST_URI);
+                            mSwipeRefreshLayout.setRefreshing(false);
+                        } else {
+                            Toast.makeText(getApplicationContext(), "Network isn't available", Toast.LENGTH_LONG).show();
+                        }
+
+
+                    }
+                }
+
+        );
+
+
+
         if (isOnline()) {
             requestData(REST_URI);
         } else {
@@ -80,6 +109,8 @@ public class MainActivity extends ListActivity /*implements AdapterView.OnItemCl
 
 
     }
+
+
 
 
     @Override
@@ -138,7 +169,7 @@ public class MainActivity extends ListActivity /*implements AdapterView.OnItemCl
         @Override
         protected List<Building> doInBackground(String... params) {
 
-            String content = HttpManager.getData(params[0]);
+            String content = HttpManager.getData(params[0], "wils0751", "password" );
             buildingList = BuildingJSONParser.parseFeed(content);
             return buildingList;
         }
@@ -161,5 +192,15 @@ public class MainActivity extends ListActivity /*implements AdapterView.OnItemCl
 
         }
     }
+    @Override
+    protected void onDestroy(){
+        super.onDestroy();
+        Log.e("TAG", "onDestory");
+        requestData(LOGOUT_URI);
+
+    }
+
+
+
 
 }
