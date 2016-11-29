@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Nov 29 16:37:12 EST 2016
+#Tue Nov 29 17:16:54 EST 2016
 14.set=ANDROID_RESOURCE
 180.file=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/common_google_signin_btn_text_light_pressed.9.png
 118.set=ANDROID_RESOURCE
@@ -17,7 +17,7 @@
 134.base=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_
 186.base=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_
 161.base=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_
-192.file=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_/res/color/abc_primary_text_material_dark.xml
+192.file=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_/res/layout/add_building.xml
 132.set=ANDROID_RESOURCE
 179.set=ANDROID_RESOURCE
 59.base=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_
@@ -71,7 +71,7 @@
 187.base=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_
 110.base=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_
 162.base=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_
-193.file=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_/res/anim/abc_slide_in_top.xml
+193.file=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_/res/color/abc_primary_text_material_dark.xml
 142.set=ANDROID_RESOURCE
 189.set=ANDROID_RESOURCE
 35.base=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_
@@ -124,7 +124,7 @@
 111.base=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_
 163.base=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_
 106.set=ANDROID_RESOURCE
-194.file=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_btn_borderless_material.xml
+194.file=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_/res/anim/abc_slide_in_top.xml
 190.base=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_
 152.set=ANDROID_RESOURCE
 199.set=ANDROID_RESOURCE
@@ -139,6 +139,7 @@
 148.base=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_
 69.set=ANDROID_RESOURCE
 169.file=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/common_google_signin_btn_text_light_disabled.9.png
+200.base=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_
 123.base=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_
 144.file=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_list_menu_item_layout.xml
 175.base=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_
@@ -178,7 +179,7 @@
 164.base=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_
 116.set=ANDROID_RESOURCE
 0.set=ANDROID_RESOURCE
-195.file=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/common_plus_signin_btn_icon_light_focused.9.png
+195.file=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_btn_borderless_material.xml
 191.base=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_
 170.file=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_list_focused_holo.9.png
 162.set=ANDROID_RESOURCE
@@ -232,7 +233,7 @@
 165.base=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_
 126.set=ANDROID_RESOURCE
 140.base=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_
-196.file=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_search_dropdown_item_icons_2line.xml
+196.file=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/common_plus_signin_btn_icon_light_focused.9.png
 171.file=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_popup_menu_item_layout.xml
 38.base=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_
 133.set=ANDROID_RESOURCE
@@ -283,7 +284,7 @@
 166.base=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_
 136.set=ANDROID_RESOURCE
 141.base=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_
-197.file=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_screen_simple.xml
+197.file=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_search_dropdown_item_icons_2line.xml
 120.file=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png
 172.file=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_item_background_holo_light.xml
 39.base=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_
@@ -335,7 +336,7 @@
 167.base=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_
 146.set=ANDROID_RESOURCE
 142.base=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_
-198.file=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_action_bar_up_container.xml
+198.file=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_screen_simple.xml
 121.file=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_scrubber_track_mtrl_alpha.9.png
 0.base=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_
 173.file=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_activity_chooser_view.xml
@@ -357,7 +358,7 @@
 6.file=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_spinner_textfield_background_material.xml
 181.base=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_
 121.set=ANDROID_RESOURCE
-count=200
+count=201
 27.base=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_
 77.set=ANDROID_RESOURCE
 79.base=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_
@@ -388,7 +389,7 @@ count=200
 156.set=ANDROID_RESOURCE
 147.file=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_/res/color/abc_search_url_text.xml
 143.base=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_
-199.file=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_/res/drawable-v21/abc_action_bar_item_background_material.xml
+199.file=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_action_bar_up_container.xml
 122.file=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxxhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png
 13.set=ANDROID_RESOURCE
 1.base=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_
@@ -443,6 +444,7 @@ count=200
 166.set=ANDROID_RESOURCE
 148.file=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_dark_disabled.9.png
 144.base=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_
+200.file=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_/res/drawable-v21/abc_action_bar_item_background_material.xml
 123.file=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_screen_simple_overlay_action_mode.xml
 23.set=ANDROID_RESOURCE
 2.base=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_
@@ -551,6 +553,7 @@ count=200
 100.file=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_/res/color-v11/abc_background_cache_hint_selector_material_dark.xml
 147.set=ANDROID_RESOURCE
 152.file=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png
+200.set=ANDROID_RESOURCE
 108.set=ANDROID_RESOURCE
 50.set=ANDROID_RESOURCE
 25.file=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png

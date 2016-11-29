@@ -1,6 +1,5 @@
 package com.algonquincollege.wils0751.doorsopenottawa;
 
-import android.app.Activity;
 import android.app.DialogFragment;
 import android.app.ListActivity;
 import android.content.Context;
@@ -19,10 +18,11 @@ import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.algonquincollege.wils0751.doorsopenottawa.Utils.HttpManager;
+import com.algonquincollege.wils0751.doorsopenottawa.Utils.HttpMethod;
+import com.algonquincollege.wils0751.doorsopenottawa.Utils.RequestPackage;
 import com.algonquincollege.wils0751.doorsopenottawa.model.Building;
 import com.algonquincollege.wils0751.doorsopenottawa.parsers.BuildingJSONParser;
-
-import org.json.JSONArray;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -122,12 +122,19 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-
         if (item.getItemId() == R.id.action_about) {
             DialogFragment newFragment = new AboutDialogFragment();
             newFragment.show(getFragmentManager(), "About Dialog");
             return true;
         }
+        if (item.getItemId() == R.id.edit) {
+            if (isOnline()) {
+                createBuilding( REST_URI );
+            } else {
+                Toast.makeText(this, "Network isn't available", Toast.LENGTH_LONG).show();
+            }
+        }
+
 
         return false;
 
@@ -136,6 +143,33 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
     private void requestData(String uri) {
         MyTask task = new MyTask();
         task.execute(uri);
+    }
+    private void createBuilding(String uri) {
+        Building building = new Building();
+        Bundle bundle = getIntent().getExtras();
+        if (bundle != null) {
+            String NameFromLoginActivity = bundle.getString("userName");
+            String PasswordFromLoginActivity = bundle.getString("userAddress");
+            String DescriptionFromLoginActivity = bundle.getString("userDescription");
+
+            building.setBuildingId(0);
+            building.setName(NameFromLoginActivity);
+            building.setAddress(PasswordFromLoginActivity);
+            building.setDescription(DescriptionFromLoginActivity);
+
+//
+            RequestPackage pkg = new RequestPackage();
+            pkg.setMethod(HttpMethod.POST);
+            pkg.setUri(uri);
+            pkg.setParam("buildingId", building.getBuildingId() + "");
+            pkg.setParam("name", building.getName());
+            pkg.setParam("address", building.getAddress());
+            pkg.setParam("address", building.getDescription());
+
+
+            DoTask postTask = new DoTask();
+            postTask.execute(pkg);
+        }
     }
 
     protected void updateDisplay() {
@@ -198,6 +232,32 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
         Log.e("TAG", "onDestory");
         requestData(LOGOUT_URI);
 
+    }
+    private class DoTask extends AsyncTask<RequestPackage, String, String> {
+
+        @Override
+        protected void onPreExecute() {
+            pb.setVisibility(View.VISIBLE);
+        }
+
+        @Override
+        protected String doInBackground(RequestPackage ... params) {
+
+            String content = HttpManager.getData(params[0], "wils0751", "password" );
+
+            return content;
+        }
+
+        @Override
+        protected void onPostExecute(String result) {
+
+            pb.setVisibility(View.INVISIBLE);
+
+            if (result == null) {
+                Toast.makeText(MainActivity.this, "Web service not available", Toast.LENGTH_LONG).show();
+                return;
+            }
+        }
     }
 
 

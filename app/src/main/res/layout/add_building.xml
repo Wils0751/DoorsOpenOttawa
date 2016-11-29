@@ -24,36 +24,47 @@
         android:layout_alignStart="@+id/textView"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
-        android:id="@+id/editText"
+        android:id="@+id/buildingName"
         android:hint="BuildingName" />
+
+    <Button
+        android:text="Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancelbutton"
+        android:layout_alignBaseline="@+id/addbutton"
+        android:layout_alignBottom="@+id/addbutton"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginEnd="7dp" />
+
+    <Button
+        android:text="Ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="131dp"
+        android:id="@+id/addbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/buildingName" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:layout_below="@+id/editText"
-        android:layout_alignEnd="@+id/editText"
-        android:layout_marginTop="26dp"
-        android:id="@+id/editText2"
-        android:hint="buildingAddress" />
+        android:layout_marginTop="32dp"
+        android:id="@+id/buildingAddress"
+        android:hint="buildingAddress"
+        android:layout_below="@+id/buildingName"
+        android:layout_alignStart="@+id/buildingName" />
 
-    <Button
-        android:text="Ok"
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignEnd="@+id/editText2"
-        android:layout_marginBottom="131dp"
-        android:id="@+id/button" />
-
-    <Button
-        android:text="Cancel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button2"
-        android:layout_alignBaseline="@+id/button"
-        android:layout_alignBottom="@+id/button"
-        android:layout_alignStart="@+id/textView" />
+        android:inputType="textPersonName"
+        android:text="buildingDescription"
+        android:ems="10"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/buildingDescription" />
 
 </RelativeLayout>
