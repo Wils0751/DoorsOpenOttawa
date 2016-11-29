@@ -1,5 +1,6 @@
 package com.algonquincollege.wils0751.doorsopenottawa;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -12,7 +13,7 @@ import android.widget.Toast;
  * Created by ShannonWilson on 2016-11-29.
  */
 
-public class NewBuildingActivity extends AppCompatActivity {
+public class NewBuildingActivity extends Activity {
 
     @Override
 

@@ -128,11 +128,9 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
             return true;
         }
         if (item.getItemId() == R.id.edit) {
-            if (isOnline()) {
-                createBuilding( REST_URI );
-            } else {
-                Toast.makeText(this, "Network isn't available", Toast.LENGTH_LONG).show();
-            }
+
+            startActivity(new Intent(this, NewBuildingActivity.class));
+
         }
 
 
@@ -226,13 +224,7 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
 
         }
     }
-    @Override
-    protected void onDestroy(){
-        super.onDestroy();
-        Log.e("TAG", "onDestory");
-        requestData(LOGOUT_URI);
 
-    }
     private class DoTask extends AsyncTask<RequestPackage, String, String> {
 
         @Override
@@ -243,7 +235,7 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
         @Override
         protected String doInBackground(RequestPackage ... params) {
 
-            String content = HttpManager.getData(params[0], "wils0751", "password" );
+            String content = HttpManager.getData(params[0],"wils0751" ,"password");
 
             return content;
         }
@@ -259,6 +251,14 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
             }
         }
     }
+    @Override
+    protected void onDestroy(){
+        super.onDestroy();
+        Log.e("TAG", "onDestory");
+        requestData(LOGOUT_URI);
+
+    }
+
 
 
 
