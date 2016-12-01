@@ -133,42 +133,19 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
 
         }
 
-
         return false;
 
     }
 
     private void requestData(String uri) {
-        MyTask task = new MyTask();
-        task.execute(uri);
+        RequestPackage getPackage = new RequestPackage();
+        getPackage.setMethod( HttpMethod.GET );
+        getPackage.setUri( uri );
+        MyTask getTask = new MyTask();
+        getTask.execute( getPackage );
+
     }
-    private void createBuilding(String uri) {
-        Building building = new Building();
-        Bundle bundle = getIntent().getExtras();
-        if (bundle != null) {
-            String NameFromLoginActivity = bundle.getString("userName");
-            String PasswordFromLoginActivity = bundle.getString("userAddress");
-            String DescriptionFromLoginActivity = bundle.getString("userDescription");
 
-            building.setBuildingId(0);
-            building.setName(NameFromLoginActivity);
-            building.setAddress(PasswordFromLoginActivity);
-            building.setDescription(DescriptionFromLoginActivity);
-
-//
-            RequestPackage pkg = new RequestPackage();
-            pkg.setMethod(HttpMethod.POST);
-            pkg.setUri(uri);
-            pkg.setParam("buildingId", building.getBuildingId() + "");
-            pkg.setParam("name", building.getName());
-            pkg.setParam("address", building.getAddress());
-            pkg.setParam("address", building.getDescription());
-
-
-            DoTask postTask = new DoTask();
-            postTask.execute(pkg);
-        }
-    }
 
     protected void updateDisplay() {
         //Use BuildingAdapter to display data
@@ -188,7 +165,7 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
     }
 
 
-    private class MyTask extends AsyncTask<String, String, List<Building>> {
+    private class MyTask extends AsyncTask<RequestPackage, String, List<Building>> {
 
         @Override
         protected void onPreExecute() {
@@ -199,7 +176,7 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
         }
 
         @Override
-        protected List<Building> doInBackground(String... params) {
+        protected List<Building> doInBackground(RequestPackage... params) {
 
             String content = HttpManager.getData(params[0], "wils0751", "password" );
             buildingList = BuildingJSONParser.parseFeed(content);
@@ -225,32 +202,7 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
         }
     }
 
-    private class DoTask extends AsyncTask<RequestPackage, String, String> {
 
-        @Override
-        protected void onPreExecute() {
-            pb.setVisibility(View.VISIBLE);
-        }
-
-        @Override
-        protected String doInBackground(RequestPackage ... params) {
-
-            String content = HttpManager.getData(params[0],"wils0751" ,"password");
-
-            return content;
-        }
-
-        @Override
-        protected void onPostExecute(String result) {
-
-            pb.setVisibility(View.INVISIBLE);
-
-            if (result == null) {
-                Toast.makeText(MainActivity.this, "Web service not available", Toast.LENGTH_LONG).show();
-                return;
-            }
-        }
-    }
     @Override
     protected void onDestroy(){
         super.onDestroy();

@@ -2,9 +2,12 @@ package com.algonquincollege.wils0751.doorsopenottawa.Utils;
 
 import android.util.Base64;
 
+import org.json.JSONObject;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
@@ -25,10 +28,16 @@ public class HttpManager {
      * @param uri Uniform Resource Identifier
      * @return String the response; null when exception
      */
-    public static String getData(String uri, String userName, String password) {
+    public static String getData(RequestPackage p, String userName, String password) {
 
         BufferedReader reader = null;
         HttpURLConnection con = null;
+
+        String uri = p.getUri();
+        if (p.getMethod() == HttpMethod.GET) {
+            uri += "?" + p.getEncodedParams();
+        }
+
 
         byte[] loginBytes = (userName + ":" + password).getBytes();
         StringBuilder loginBuilder = new StringBuilder()
@@ -38,6 +47,18 @@ public class HttpManager {
         try {
             URL url = new URL(uri);
             con = (HttpURLConnection) url.openConnection();
+
+            JSONObject json = new JSONObject(p.getParams());
+            String params = json.toString();
+
+            if (p.getMethod() == HttpMethod.POST || p.getMethod() == HttpMethod.PUT) {
+                con.addRequestProperty("Accept", "application/json");
+                con.addRequestProperty("Content-Type", "application/json");
+                con.setDoOutput(true);
+                OutputStreamWriter writer = new OutputStreamWriter(con.getOutputStream());
+                writer.write(params);
+                writer.flush();
+            }
 
             con.addRequestProperty("Authorization", loginBuilder.toString());
 
