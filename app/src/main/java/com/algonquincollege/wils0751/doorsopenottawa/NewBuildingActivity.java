@@ -48,10 +48,9 @@ public class NewBuildingActivity extends Activity {
                 name = buildingName.getText().toString();
                 address = buildingAddress.getText().toString();
                 description = buildingDescription.getText().toString();
-
                 createBuilding(REST_URI);
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
-                Toast.makeText(getApplicationContext(), "you have succesfully added a building", Toast.LENGTH_SHORT).show();
+
             }
         });
         cancelButton.setOnClickListener(new View.OnClickListener() {
@@ -63,7 +62,8 @@ public class NewBuildingActivity extends Activity {
 
     }
     private void createBuilding(String uri) {
-        Building building = new Building();
+            Building building = new Building();
+
 
             building.setBuildingId(0);
             building.setName(name);
@@ -91,6 +91,7 @@ public class NewBuildingActivity extends Activity {
         @Override
         protected void onPreExecute() {
 //            pb.setVisibility(View.VISIBLE);
+
         }
 
         @Override

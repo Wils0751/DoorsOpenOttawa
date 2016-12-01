@@ -556,7 +556,7 @@ int id action_mode_close_button 0x7f0c002e
 int id activity_chooser_view_content 0x7f0c002f
 int id activity_detail 0x7f0c005b
 int id activity_main 0x7f0c0060
-int id addbutton 0x7f0c0066
+int id addbutton 0x7f0c0064
 int id addressCell 0x7f0c006b
 int id adjust_height 0x7f0c001c
 int id adjust_width 0x7f0c001d
@@ -567,10 +567,10 @@ int id beginning 0x7f0c0019
 int id buildingAddress 0x7f0c0067
 int id buildingCellDescription 0x7f0c006a
 int id buildingDescription 0x7f0c0068
-int id buildingName 0x7f0c0064
+int id buildingName 0x7f0c0066
 int id buttonPanel 0x7f0c0036
 int id cancel_action 0x7f0c006d
-int id cancelbutton 0x7f0c0065
+int id cancelbutton 0x7f0c0063
 int id checkbox 0x7f0c0044
 int id chronometer 0x7f0c0073
 int id collapseActionView 0x7f0c0022
@@ -647,7 +647,7 @@ int id terrain 0x7f0c0020
 int id text 0x7f0c0076
 int id text2 0x7f0c0074
 int id textSpacerNoButtons 0x7f0c003f
-int id textView 0x7f0c0063
+int id textView 0x7f0c0065
 int id textViewDescription 0x7f0c005d
 int id textViewName 0x7f0c005c
 int id textviewDate 0x7f0c005e

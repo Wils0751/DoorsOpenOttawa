@@ -5,28 +5,6 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:text="Add Building"
-        android:layout_width="275dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="64dp"
-        android:textSize="36sp" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:layout_below="@+id/textView"
-        android:layout_alignStart="@+id/textView"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
-        android:id="@+id/buildingName"
-        android:hint="BuildingName" />
-
     <Button
         android:text="Cancel"
         android:layout_width="wrap_content"
@@ -34,37 +12,58 @@
         android:id="@+id/cancelbutton"
         android:layout_alignBaseline="@+id/addbutton"
         android:layout_alignBottom="@+id/addbutton"
-        android:layout_alignEnd="@+id/textView"
-        android:layout_marginEnd="7dp" />
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginStart="12dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/buildingName"
+        android:hint="BuildingName"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/buildingAddress" />
+
+    <TextView
+        android:text="Add Building"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_marginTop="30dp"
+        android:textSize="36sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/buildingAddress"
+        android:hint="buildingAddress"
+        android:layout_below="@+id/buildingName"
+        android:layout_alignStart="@+id/buildingDescription"
+        android:layout_marginTop="34dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/buildingDescription"
+        android:hint="buildingDescription"
+        android:layout_below="@+id/buildingAddress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
 
     <Button
         android:text="Ok"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="131dp"
         android:id="@+id/addbutton"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/buildingName" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:layout_marginTop="32dp"
-        android:id="@+id/buildingAddress"
-        android:hint="buildingAddress"
-        android:layout_below="@+id/buildingName"
-        android:layout_alignStart="@+id/buildingName" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="buildingDescription"
-        android:ems="10"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/buildingDescription" />
+        android:layout_marginTop="49dp"
+        android:layout_below="@+id/buildingDescription"
+        android:layout_alignEnd="@+id/buildingDescription" />
 
 </RelativeLayout>

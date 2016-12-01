@@ -25,7 +25,7 @@ public class HttpManager {
     /**
      * Return the HTTP response from uri
      *
-     * @param uri Uniform Resource Identifier
+     * @param //uri Uniform Resource Identifier
      * @return String the response; null when exception
      */
     public static String getData(RequestPackage p, String userName, String password) {
@@ -45,8 +45,10 @@ public class HttpManager {
                 .append(Base64.encodeToString(loginBytes, Base64.DEFAULT));
 
         try {
+
             URL url = new URL(uri);
             con = (HttpURLConnection) url.openConnection();
+
 
             JSONObject json = new JSONObject(p.getParams());
             String params = json.toString();
@@ -61,6 +63,7 @@ public class HttpManager {
             }
 
             con.addRequestProperty("Authorization", loginBuilder.toString());
+
 
             StringBuilder sb = new StringBuilder();
             reader = new BufferedReader(new InputStreamReader(con.getInputStream()));
