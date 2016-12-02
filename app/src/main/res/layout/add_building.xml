@@ -5,16 +5,6 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
-        android:text="Cancel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/cancelbutton"
-        android:layout_alignBaseline="@+id/addbutton"
-        android:layout_alignBottom="@+id/addbutton"
-        android:layout_alignStart="@+id/textView"
-        android:layout_marginStart="12dp" />
-
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -58,12 +48,40 @@
         android:layout_marginTop="10dp" />
 
     <Button
+        android:text="Pick an Image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loadImage"
+        android:layout_below="@+id/buildingDescription"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:text="Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancelbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
         android:text="Ok"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/addbutton"
-        android:layout_marginTop="49dp"
-        android:layout_below="@+id/buildingDescription"
+        android:layout_alignBaseline="@+id/cancelbutton"
+        android:layout_alignBottom="@+id/cancelbutton"
         android:layout_alignEnd="@+id/buildingDescription" />
+
+    <ImageView
+        android:layout_width="100dp"
+        app:srcCompat="@mipmap/doorsopen"
+        android:id="@+id/doorsopenimage"
+        android:layout_height="100dp"
+        android:layout_above="@+id/cancelbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp" />
 
 </RelativeLayout>

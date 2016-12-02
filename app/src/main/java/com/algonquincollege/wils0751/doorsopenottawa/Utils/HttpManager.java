@@ -48,21 +48,21 @@ public class HttpManager {
 
             URL url = new URL(uri);
             con = (HttpURLConnection) url.openConnection();
+            con.setRequestMethod(p.getMethod().toString());
 
-
+            con.addRequestProperty("Authorization", loginBuilder.toString());
             JSONObject json = new JSONObject(p.getParams());
             String params = json.toString();
 
             if (p.getMethod() == HttpMethod.POST || p.getMethod() == HttpMethod.PUT) {
                 con.addRequestProperty("Accept", "application/json");
                 con.addRequestProperty("Content-Type", "application/json");
+                con.addRequestProperty("Authorization", loginBuilder.toString());
                 con.setDoOutput(true);
                 OutputStreamWriter writer = new OutputStreamWriter(con.getOutputStream());
                 writer.write(params);
                 writer.flush();
             }
-
-            con.addRequestProperty("Authorization", loginBuilder.toString());
 
 
             StringBuilder sb = new StringBuilder();

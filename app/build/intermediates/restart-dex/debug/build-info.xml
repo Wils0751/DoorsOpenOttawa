@@ -5,53 +5,47 @@
     density="560dpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="31387974643850"
+    timestamp="53025654997147"
     token="-4831305550388473472"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="68" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="5" />
     <task
         name="verifier"
-        duration="0" />
+        duration="1" />
+
+    <artifact
+        location="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
+        type="DEX" />
 
     <build
-        timestamp="29220294719385"
-        verifier="FULL_BUILD_REQUESTED" >
+        timestamp="51594371304711"
+        verifier="MANIFEST_FILE_CHANGE" >
         <artifact
             location="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="30844798151737"
-        verifier="R_CLASS_CHANGE" >
-        <artifact
-            location="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
-            type="RESOURCES" />
-    </build>
-    <build
-        timestamp="31026605123512"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
-            type="DEX" />
-    </build>
-    <build
-        timestamp="31348491943541"
+        timestamp="52660509640118"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
             type="DEX" />
     </build>
     <build
-        timestamp="31387974643850"
-        verifier="COLD_SWAP_REQUESTED" />
+        timestamp="53025654997147"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
+            type="DEX" />
+    </build>
 
 </instant-run>

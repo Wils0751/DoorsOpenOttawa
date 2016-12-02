@@ -4,19 +4,23 @@ import android.app.DialogFragment;
 import android.app.ListActivity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.CompoundButton;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
+import android.widget.ToggleButton;
 
 import com.algonquincollege.wils0751.doorsopenottawa.Utils.HttpManager;
 import com.algonquincollege.wils0751.doorsopenottawa.Utils.HttpMethod;
@@ -25,7 +29,9 @@ import com.algonquincollege.wils0751.doorsopenottawa.model.Building;
 import com.algonquincollege.wils0751.doorsopenottawa.parsers.BuildingJSONParser;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  * Main activity class handles all the stuff displaying on the screen
@@ -53,6 +59,7 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        SharedPreferences settings = getSharedPreferences( getResources().getString(R.string.app_name), Context.MODE_PRIVATE );
 
         pb = (ProgressBar) findViewById(R.id.progressBar);
         pb.setVisibility(View.INVISIBLE);
@@ -98,6 +105,10 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
                 }
 
         );
+
+
+
+
 
 
 
@@ -210,9 +221,6 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
         requestData(LOGOUT_URI);
 
     }
-
-
-
 
 
 }
