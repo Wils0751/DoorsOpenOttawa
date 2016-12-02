@@ -88,6 +88,14 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
         getListView().setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id){
+                Building theSelectedBuilding = buildingList.get(position);
+
+                Intent intent = new Intent(getApplicationContext(), EditBuildingActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intent.putExtra("description", theSelectedBuilding.getDescription());
+                intent.putExtra("address", theSelectedBuilding.getAddress());
+
+                startActivity(intent);
                 return true;
             }
         });

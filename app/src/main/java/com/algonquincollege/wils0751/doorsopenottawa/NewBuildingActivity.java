@@ -63,9 +63,7 @@ public class NewBuildingActivity extends Activity {
                 address = buildingAddress.getText().toString();
                 description = buildingDescription.getText().toString();
 
-
                 createBuilding(REST_URI);
-                startActivity(new Intent(getApplicationContext(), MainActivity.class));
 
             }
         });
@@ -137,7 +135,7 @@ public class NewBuildingActivity extends Activity {
             RequestPackage pkg = new RequestPackage();
             pkg.setMethod(HttpMethod.POST);
             pkg.setUri(uri);
-            pkg.setParam("buildingId", building.getBuildingId() + "");
+//            pkg.setParam("buildingId", building.getBuildingId() + "");
             pkg.setParam("name", building.getName());
             pkg.setParam("address", building.getAddress());
             pkg.setParam("image", building.getImage());
