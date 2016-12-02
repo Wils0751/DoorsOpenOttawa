@@ -15,8 +15,23 @@
     <item
         android:id="@+id/trash"
         android:icon="@android:drawable/ic_menu_delete"
-        android:title="@string/action_about"
+        android:title="delete"
         android:showAsAction="always"
         android:visible="true" />
+    <item android:id="@+id/search"
+        android:title="Search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:showAsAction="always"
+        android:actionViewClass="android.widget.SearchView" />
+    <group android:id="@+id/sort_options" android:checkableBehavior="single">
+
+
+        <item android:id="@+id/action_sort_name_asc"
+            android:title="Sort by Name (a-z)"
+            android:checked="true" />
+        <item android:id="@+id/action_sort_name_dsc"
+            android:title="Sort by Name (z-a)"
+            android:checked="false" />
+    </group>
 
 </menu>

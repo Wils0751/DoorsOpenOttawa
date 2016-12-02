@@ -1,4 +1,4 @@
-#Fri Dec 02 00:04:28 EST 2016
+#Fri Dec 02 11:48:38 EST 2016
 base.0=/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_3ab9f5d945af21cd94eef1f8b246e951474d15be
 renamed.1=classes2.dex
 renamed.0=classes.dex

@@ -10,28 +10,6 @@
         android:id="@+id/editbuilding"
         android:textSize="24sp" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text=""
-        android:ems="10"
-        android:id="@+id/buildingaddress"
-        android:layout_below="@+id/editbuilding"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="87dp" />
-
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text=""
-        android:ems="10"
-        android:id="@+id/buildingname"
-        android:layout_alignBottom="@+id/buildingaddress"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="30dp" />
 
     <Button
         android:text="Save"
@@ -46,10 +24,32 @@
         android:text="Cancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/cancel"
+        android:id="@+id/cancelbutton"
         android:layout_alignBaseline="@+id/save"
         android:layout_alignBottom="@+id/save"
         android:layout_toStartOf="@+id/save"
         android:layout_marginEnd="59dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text=""
+        android:ems="10"
+        android:id="@+id/buildingaddress"
+        android:layout_marginTop="131dp"
+        android:layout_below="@+id/editbuilding"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text=""
+        android:ems="10"
+        android:id="@+id/buildingname"
+        android:layout_marginBottom="50dp"
+        android:layout_alignBottom="@+id/buildingaddress"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

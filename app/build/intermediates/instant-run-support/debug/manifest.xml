@@ -41,7 +41,8 @@
         </activity>
         <activity android:name="com.algonquincollege.wils0751.doorsopenottawa.NewBuildingActivity" >
             <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-            />
+        </activity>
+        <activity android:name="com.algonquincollege.wils0751.doorsopenottawa.EditBuildingActivity" >
         </activity>
 
         <meta-data

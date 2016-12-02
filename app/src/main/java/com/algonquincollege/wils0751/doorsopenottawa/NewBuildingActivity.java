@@ -23,6 +23,8 @@ import com.algonquincollege.wils0751.doorsopenottawa.Utils.HttpMethod;
 import com.algonquincollege.wils0751.doorsopenottawa.Utils.RequestPackage;
 import com.algonquincollege.wils0751.doorsopenottawa.model.Building;
 
+import java.io.File;
+
 import static android.R.attr.button;
 import static android.R.attr.data;
 import static android.R.attr.start;
@@ -80,8 +82,8 @@ public class NewBuildingActivity extends Activity {
             @Override
             public void onClick(View c) {
 
-                Intent intent = new Intent(Intent.ACTION_PICK,
-                        android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                Intent intent = new Intent(Intent.ACTION_PICK);
+                intent.setType("image/");
 
                 startActivityForResult(intent, RESULT_LOAD_IMAGE);
             }
@@ -104,8 +106,8 @@ public class NewBuildingActivity extends Activity {
             String[] FILE = {MediaStore.Images.Media.DATA};
 
 
-            Cursor cursor = getContentResolver().query(URI,
-                    FILE, null, null, null);
+            Cursor cursor = managedQuery(URI, FILE, null, null, null);
+
 
             cursor.moveToFirst();
 

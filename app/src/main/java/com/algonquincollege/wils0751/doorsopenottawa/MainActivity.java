@@ -16,6 +16,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.CompoundButton;
 import android.widget.ListView;
 import android.widget.ProgressBar;
@@ -29,6 +30,8 @@ import com.algonquincollege.wils0751.doorsopenottawa.model.Building;
 import com.algonquincollege.wils0751.doorsopenottawa.parsers.BuildingJSONParser;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -90,12 +93,12 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id){
                 Building theSelectedBuilding = buildingList.get(position);
 
-                Intent intent = new Intent(getApplicationContext(), EditBuildingActivity.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("description", theSelectedBuilding.getDescription());
-                intent.putExtra("address", theSelectedBuilding.getAddress());
+                Intent i = new Intent(getApplicationContext(), EditBuildingActivity.class);
+                i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                i.putExtra("description", theSelectedBuilding.getDescription());
+                i.putExtra("address", theSelectedBuilding.getAddress());
 
-                startActivity(intent);
+                startActivity(i);
                 return true;
             }
         });
@@ -141,19 +144,55 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.isCheckable()) {
+            // leave if the list is null
+            if (buildingList == null) {
+                return true;
+            }
 
-        if (item.getItemId() == R.id.action_about) {
-            DialogFragment newFragment = new AboutDialogFragment();
-            newFragment.show(getFragmentManager(), "About Dialog");
-            return true;
+
+            // which sort menu item did the user pick?
+            switch (item.getItemId()) {
+                case R.id.action_sort_name_asc:
+                    Collections.sort(buildingList, new Comparator<Building>() {
+                        @Override
+                        public int compare(Building lhs, Building rhs) {
+                            Log.i("PLANETS", "Sorting planets by name (a-z)");
+                            return lhs.getName().compareTo(rhs.getName());
+                        }
+                    });
+                    break;
+
+                case R.id.action_sort_name_dsc:
+                    Collections.sort(buildingList, Collections.reverseOrder(new Comparator<Building>() {
+                        @Override
+                        public int compare(Building lhs, Building rhs) {
+                            Log.i("PLANETS", "Sorting planets by name (z-a)");
+                            return lhs.getName().compareTo(rhs.getName());
+                        }
+                    }));
+                    break;
+            }
+            item.setChecked(true);
+            // re-fresh the list to show the sort order
+            ((ArrayAdapter) getListAdapter()).notifyDataSetChanged();
         }
-        if (item.getItemId() == R.id.edit) {
+            if (item.getItemId() == R.id.action_about) {
+                DialogFragment newFragment = new AboutDialogFragment();
+                newFragment.show(getFragmentManager(), "About Dialog");
+                return true;
+            }
+            if (item.getItemId() == R.id.edit) {
 
-            startActivity(new Intent(this, NewBuildingActivity.class));
+                startActivity(new Intent(this, NewBuildingActivity.class));
 
-        }
+            }
 
-        return false;
+            // remember which sort option the user picked
+
+
+
+            return false;
 
     }
 
