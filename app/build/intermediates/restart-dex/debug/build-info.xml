@@ -5,59 +5,33 @@
     density="560dpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="57323688861426"
+    timestamp="58133689542104"
     token="-4831305550388473472"
-    verifier="COLD_SWAP_REQUESTED" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="156" />
+        duration="370" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="40" />
+        duration="247" />
     <task
         name="verifier"
-        duration="3" />
+        duration="57" />
 
     <artifact
-        location="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
-        type="RESOURCES" />
-    <artifact
-        location="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
-        type="DEX" />
-    <artifact
-        location="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
-        type="DEX" />
+        location="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
 
     <build
-        timestamp="51594371304711"
-        verifier="MANIFEST_FILE_CHANGE" >
+        timestamp="58133689542104"
+        verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
-    </build>
-    <build
-        timestamp="55355251295242"
-        verifier="CLASS_ADDED" >
-        <artifact
-            location="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
-            type="DEX" />
-    </build>
-    <build
-        timestamp="57323688861426"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
-            type="RESOURCES" />
-        <artifact
-            location="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
-            type="DEX" />
     </build>
 
 </instant-run>

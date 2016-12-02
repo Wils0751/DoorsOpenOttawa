@@ -25,7 +25,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="9dd4f72ed17e6f67fb1859d77f4193b2c01998a1">
+        sha1="2a54aeb3b04b7c535bbafd4f947122cb65826a99">
         <dex dex="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_9c661dcc2d4dcd2d8f89a24cce889c95771e528e/classes.dex" />
     </item>
     <item
@@ -79,7 +79,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="884762d8fcff484c5e7e60e68c072992e16f0ea4">
+        sha1="30cf2180818a71db1135c4534a37564a62492515">
         <dex dex="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_3ab9f5d945af21cd94eef1f8b246e951474d15be/classes.dex" />
     </item>
     <item
