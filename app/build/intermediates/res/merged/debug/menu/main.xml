@@ -5,10 +5,16 @@
         android:id="@+id/action_about"
         android:icon="@android:drawable/ic_dialog_info"
         android:title="@string/action_about"
-        app:showAsAction="always" />
+        android:showAsAction="always" />
     <item
         android:id="@+id/edit"
-        android:icon="@android:drawable/ic_menu_edit"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="@string/action_about"
+        android:showAsAction="always"
+        android:visible="true" />
+    <item
+        android:id="@+id/trash"
+        android:icon="@android:drawable/ic_menu_delete"
         android:title="@string/action_about"
         android:showAsAction="always"
         android:visible="true" />

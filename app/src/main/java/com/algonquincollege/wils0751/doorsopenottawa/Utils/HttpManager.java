@@ -57,7 +57,6 @@ public class HttpManager {
             if (p.getMethod() == HttpMethod.POST || p.getMethod() == HttpMethod.PUT) {
                 con.addRequestProperty("Accept", "application/json");
                 con.addRequestProperty("Content-Type", "application/json");
-                con.addRequestProperty("Authorization", loginBuilder.toString());
                 con.setDoOutput(true);
                 OutputStreamWriter writer = new OutputStreamWriter(con.getOutputStream());
                 writer.write(params);

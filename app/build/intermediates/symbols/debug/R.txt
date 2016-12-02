@@ -659,6 +659,7 @@ int id time 0x7f0c0074
 int id title 0x7f0c0035
 int id title_template 0x7f0c003a
 int id topPanel 0x7f0c0039
+int id trash 0x7f0c007d
 int id up 0x7f0c0008
 int id useLogo 0x7f0c0012
 int id wide 0x7f0c0028

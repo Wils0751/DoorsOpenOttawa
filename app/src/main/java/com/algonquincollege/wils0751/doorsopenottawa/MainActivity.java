@@ -85,6 +85,12 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
                 startActivity(intent);
             }
         });
+        getListView().setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id){
+                return true;
+            }
+        });
         mSwipeRefreshLayout.setOnRefreshListener(
                 new SwipeRefreshLayout.OnRefreshListener() {
                     @Override
@@ -105,11 +111,6 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
                 }
 
         );
-
-
-
-
-
 
 
         if (isOnline()) {
@@ -214,13 +215,13 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
     }
 
 
-    @Override
-    protected void onDestroy(){
-        super.onDestroy();
-        Log.e("TAG", "onDestory");
-        requestData(LOGOUT_URI);
-
-    }
+//    @Override
+//    protected void onDestroy(){
+//        super.onDestroy();
+//        Log.e("TAG", "onDestory");
+//        requestData(LOGOUT_URI);
+//
+//    }
 
 
 }

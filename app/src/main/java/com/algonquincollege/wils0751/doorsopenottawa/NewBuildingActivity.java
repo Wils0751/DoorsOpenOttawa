@@ -123,9 +123,6 @@ public class NewBuildingActivity extends Activity {
 
 
 
-
-
-
     private void createBuilding(String uri) {
             Building building = new Building();
 
@@ -133,7 +130,7 @@ public class NewBuildingActivity extends Activity {
             building.setBuildingId(0);
             building.setName(name);
             building.setAddress(address);
-            building.setImage("images/test.jpg");
+            building.setImage("image/test.jpg");
             building.setDescription(description);
 
 //
@@ -160,9 +157,9 @@ public class NewBuildingActivity extends Activity {
         }
 
         @Override
-        protected String doInBackground(RequestPackage ... params) {
+        protected String doInBackground(RequestPackage... params) {
 
-            String content = HttpManager.getData(params[0],"wils0751" ,"password");
+            String content = HttpManager.getData(params[0], "wils0751", "password");
 
             return content;
         }
@@ -172,11 +169,12 @@ public class NewBuildingActivity extends Activity {
 
 //            pb.setVisibility(View.INVISIBLE);
 
-//            if (result == null) {
-//                Toast.makeText(, "Web service not available", Toast.LENGTH_LONG).show();
+            if (result == null) {
+                Toast.makeText(NewBuildingActivity.this, "Web service not available", Toast.LENGTH_LONG).show();
                 return;
             }
         }
+    }
 }
 
 

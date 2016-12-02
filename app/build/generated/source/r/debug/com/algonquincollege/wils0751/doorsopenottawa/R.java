@@ -2002,6 +2002,7 @@ containing a value of this type.
         public static final int title=0x7f0c0035;
         public static final int title_template=0x7f0c003a;
         public static final int topPanel=0x7f0c0039;
+        public static final int trash=0x7f0c007d;
         public static final int up=0x7f0c0008;
         public static final int useLogo=0x7f0c0012;
         public static final int wide=0x7f0c0028;
