@@ -120,6 +120,10 @@
         "source": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_ratingbar_indicator_material.xml"
     },
     {
+        "merged": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/merged/debug/drawable/myhouse.jpg",
+        "source": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/src/main/res/drawable/myhouse.jpg"
+    },
+    {
         "merged": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light.xml",
         "source": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_google_signin_btn_icon_light.xml"
     },

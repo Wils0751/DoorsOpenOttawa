@@ -111,6 +111,7 @@ public class BuildingAdapter extends ArrayAdapter<Building> {
 
         @Override
         protected void onPostExecute(BuildingAndView result) {
+
             ImageView image = (ImageView) result.view.findViewById(R.id.imageView1);
             image.setImageBitmap(result.bitmap);
 //        result.building.setBitmap(result.bitmap);

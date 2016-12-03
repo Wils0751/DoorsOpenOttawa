@@ -1,14 +1,18 @@
 package com.algonquincollege.wils0751.doorsopenottawa;
 
+import android.Manifest;
 import android.app.DialogFragment;
 import android.app.ListActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.util.Log;
@@ -28,6 +32,10 @@ import com.algonquincollege.wils0751.doorsopenottawa.Utils.HttpMethod;
 import com.algonquincollege.wils0751.doorsopenottawa.Utils.RequestPackage;
 import com.algonquincollege.wils0751.doorsopenottawa.model.Building;
 import com.algonquincollege.wils0751.doorsopenottawa.parsers.BuildingJSONParser;
+import com.google.android.gms.appindexing.Action;
+import com.google.android.gms.appindexing.AppIndex;
+import com.google.android.gms.appindexing.Thing;
+import com.google.android.gms.common.api.GoogleApiClient;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -46,7 +54,8 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
     // URL to my RESTful API Service hosted on my Bluemix account.
     public static final String IMAGES_BASE_URL = "https://doors-open-ottawa-hurdleg.mybluemix.net/";
     public static final String REST_URI = "https://doors-open-ottawa-hurdleg.mybluemix.net/buildings";
-    public static final String LOGOUT_URI ="http://doors-open-ottawa-hurdleg.mybluemix.net/users/logout";
+    public static final String LOGOUT_URI = "http://doors-open-ottawa-hurdleg.mybluemix.net/users/logout";
+
     private static final String TAG = "";
     SwipeRefreshLayout mSwipeRefreshLayout;
 
@@ -57,18 +66,22 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
     private List<MyTask> tasks;
 
     private List<Building> buildingList;
+    /**
+     * ATTENTION: This was auto-generated to implement the App Indexing API.
+     * See https://g.co/AppIndexing/AndroidStudio for more information.
+     */
+    private GoogleApiClient client;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        SharedPreferences settings = getSharedPreferences( getResources().getString(R.string.app_name), Context.MODE_PRIVATE );
+        SharedPreferences settings = getSharedPreferences(getResources().getString(R.string.app_name), Context.MODE_PRIVATE);
 
         pb = (ProgressBar) findViewById(R.id.progressBar);
         pb.setVisibility(View.INVISIBLE);
 
         mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swiperefresh);
-
 
 
         tasks = new ArrayList<>();
@@ -90,7 +103,7 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
         });
         getListView().setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
-            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id){
+            public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
                 Building theSelectedBuilding = buildingList.get(position);
 
                 Intent i = new Intent(getApplicationContext(), EditBuildingActivity.class);
@@ -129,11 +142,7 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
         } else {
             Toast.makeText(this, "Network isn't available", Toast.LENGTH_LONG).show();
         }
-
-
     }
-
-
 
 
     @Override
@@ -177,32 +186,46 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
             // re-fresh the list to show the sort order
             ((ArrayAdapter) getListAdapter()).notifyDataSetChanged();
         }
-            if (item.getItemId() == R.id.action_about) {
-                DialogFragment newFragment = new AboutDialogFragment();
-                newFragment.show(getFragmentManager(), "About Dialog");
-                return true;
+        if (item.getItemId() == R.id.action_about) {
+            DialogFragment newFragment = new AboutDialogFragment();
+            newFragment.show(getFragmentManager(), "About Dialog");
+            return true;
+        }
+        if (item.getItemId() == R.id.edit) {
+
+            startActivity(new Intent(this, NewBuildingActivity.class));
+
+        }
+        if (item.getItemId() ==R.id.trash){
+            if (isOnline()) {
+                deletePlanet( REST_URI );
+            } else {
+                Toast.makeText(this, "Network isn't available", Toast.LENGTH_LONG).show();
             }
-            if (item.getItemId() == R.id.edit) {
+        }
 
-                startActivity(new Intent(this, NewBuildingActivity.class));
+        // remember which sort option the user picked
 
-            }
-
-            // remember which sort option the user picked
-
-
-
-            return false;
+        return false;
 
     }
 
     private void requestData(String uri) {
         RequestPackage getPackage = new RequestPackage();
-        getPackage.setMethod( HttpMethod.GET );
-        getPackage.setUri( uri );
+        getPackage.setMethod(HttpMethod.GET);
+        getPackage.setUri(uri);
         MyTask getTask = new MyTask();
-        getTask.execute( getPackage );
+        getTask.execute(getPackage);
 
+    }
+
+    private void deletePlanet(String uri) {
+        RequestPackage pkg = new RequestPackage();
+        pkg.setMethod( HttpMethod.DELETE );
+        // DELETE the planet with Id 8
+        pkg.setUri( uri + "/138" );
+        DoTask deleteTask = new DoTask();
+        deleteTask.execute( pkg );
     }
 
 
@@ -224,6 +247,7 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
     }
 
 
+
     private class MyTask extends AsyncTask<RequestPackage, String, List<Building>> {
 
         @Override
@@ -237,7 +261,7 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
         @Override
         protected List<Building> doInBackground(RequestPackage... params) {
 
-            String content = HttpManager.getData(params[0], "wils0751", "password" );
+            String content = HttpManager.getData(params[0], "wils0751", "password");
             buildingList = BuildingJSONParser.parseFeed(content);
             return buildingList;
         }
@@ -258,6 +282,34 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
             buildingList = result;
             updateDisplay();
 
+        }
+
+    }
+    private class DoTask extends AsyncTask<RequestPackage, String, String> {
+
+        @Override
+        protected void onPreExecute() {
+//            pb.setVisibility(View.VISIBLE);
+
+        }
+
+        @Override
+        protected String doInBackground(RequestPackage... params) {
+
+            String content = HttpManager.getData(params[0], "wils0751", "password");
+
+            return content;
+        }
+
+        @Override
+        protected void onPostExecute(String result) {
+
+//            pb.setVisibility(View.INVISIBLE);
+
+            if (result == null) {
+                Toast.makeText(getApplicationContext(), "Web service not available", Toast.LENGTH_LONG).show();
+                return;
+            }
         }
     }
 

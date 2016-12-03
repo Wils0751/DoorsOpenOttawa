@@ -36,12 +36,14 @@ import static android.R.attr.start;
 public class NewBuildingActivity extends Activity {
 
     public static final String REST_URI = "https://doors-open-ottawa-hurdleg.mybluemix.net/buildings";
+    public static final String REST_URI_IMAGE="http://doors-open-ottawa-hurdleg.mybluemix.net/buildings/";
     private static int RESULT_LOAD_IMAGE = 1;
     String ImageDecode;
     private static final String TAG = "";
     public String name;
     public String address;
     public String description;
+    public ImageView buildingImage;
 
     @Override
 
@@ -60,6 +62,8 @@ public class NewBuildingActivity extends Activity {
                 EditText buildingName = (EditText) findViewById(R.id.buildingName);
                 EditText buildingAddress = (EditText) findViewById(R.id.buildingAddress);
                 EditText buildingDescription = (EditText) findViewById(R.id.buildingDescription);
+
+
 
                 name = buildingName.getText().toString();
                 address = buildingAddress.getText().toString();
@@ -82,41 +86,36 @@ public class NewBuildingActivity extends Activity {
             @Override
             public void onClick(View c) {
 
-                Intent intent = new Intent(Intent.ACTION_PICK);
-                intent.setType("image/");
 
-                startActivityForResult(intent, RESULT_LOAD_IMAGE);
+                Intent galleryIntent = new Intent(Intent.ACTION_PICK,
+                        MediaStore.Images.Media.INTERNAL_CONTENT_URI);
+// Start the Intent
+                startActivityForResult(galleryIntent, RESULT_LOAD_IMAGE);
             }
         });
-
-
     }
+
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        ImageView imageView = (ImageView) findViewById(R.id.imageView1);
         super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode != RESULT_OK) {
+            Bundle extras = data.getExtras();
+            Bitmap imageBitmap = (Bitmap) extras.get("data");
+            buildingImage =(ImageView) findViewById(R.id.imageView1);
+            buildingImage.setImageBitmap(imageBitmap);
+        }
+        if (requestCode == 1) {
+            final Bundle extras = data.getExtras();
+            if (extras != null) {
+                //Get image
+                Bitmap ProfilePic = extras.getParcelable("data");
+                buildingImage.setImageBitmap(ProfilePic);
+                Uri fullPhotoUri = data.getData();
+                buildingImage.setImageURI(fullPhotoUri);
 
-
-        if (requestCode == RESULT_LOAD_IMAGE && resultCode == RESULT_OK
-                && null != data) {
-
-
-            Uri URI = data.getData();
-            String[] FILE = {MediaStore.Images.Media.DATA};
-
-
-            Cursor cursor = managedQuery(URI, FILE, null, null, null);
-
-
-            cursor.moveToFirst();
-
-            int columnIndex = cursor.getColumnIndex(FILE[0]);
-            ImageDecode = cursor.getString(columnIndex);
-            cursor.close();
-
-            imageView.setImageBitmap(BitmapFactory
-                    .decodeFile(ImageDecode));
+             }
         }
     }
 
@@ -130,7 +129,7 @@ public class NewBuildingActivity extends Activity {
             building.setBuildingId(0);
             building.setName(name);
             building.setAddress(address);
-            building.setImage("image/test.jpg");
+
             building.setDescription(description);
 
 //
@@ -147,6 +146,14 @@ public class NewBuildingActivity extends Activity {
            DoTask postTask = new DoTask();
             postTask.execute(pkg);
         }
+    private void uploadImage(String uri){
+        Building building = new Building();
+        building.setImage("tests.jpg");
+
+        RequestPackage pkg = new RequestPackage();
+        pkg.setMethod(HttpMethod.POST);
+        pkg.setUri(uri + "138" + "/image" );
+    }
 
     private class DoTask extends AsyncTask<RequestPackage, String, String> {
 
