@@ -48,5 +48,6 @@
     <string msgid="311697239335516384" name="common_open_on_phone">"ಫೋನ್‌ನಲ್ಲಿ ತೆರೆಯಿರಿ"</string>
     <string msgid="3156914698180786012" name="common_signin_button_text">"ಸೈನ್ ಇನ್"</string>
     <string msgid="1483290677806110088" name="common_signin_button_text_long">"Google ಮೂಲಕ ಸೈನ್ ಇನ್ ಮಾಡಿ"</string>
+    <string msgid="146198913615257606" name="search_menu_title">"ಹುಡುಕು"</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
 </resources>

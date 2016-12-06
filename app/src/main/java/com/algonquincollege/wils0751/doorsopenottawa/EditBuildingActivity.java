@@ -22,7 +22,7 @@ import com.algonquincollege.wils0751.doorsopenottawa.model.Building;
  */
 
 public class EditBuildingActivity extends Activity {
-    public static final String REST_URI = "https://doors-open-ottawa-hurdleg.mybluemix.net/buildings";
+    public static final String REST_URI = "https://doors-open-ottawa-hurdleg.mybluemix.net/buildings/";
     private EditText buildingName;
     private EditText buildingAddress;
     private Button savebtn;
@@ -56,6 +56,7 @@ public class EditBuildingActivity extends Activity {
 
                 updateBuilding(REST_URI);
                 Toast.makeText(getApplicationContext(), Description + Address, Toast.LENGTH_SHORT).show();
+                finish();
             }
         });
         cancelbtn = (Button) findViewById(R.id.cancelbutton);
@@ -70,12 +71,19 @@ public class EditBuildingActivity extends Activity {
     }
     private void updateBuilding(String uri) {
         Building building = new Building();
-        building.setDescription(Description);
-        building.setAddress(Address);
+        String address = buildingName.getText().toString();
+        String description = buildingAddress.getText().toString();
+
+        if (!address.equals(building.getAddress())) {
+            building.setAddress(address);
+        }
+        if (!description.equals(building.getDescription())) {
+            building.setDescription(description);
+        }
 
         RequestPackage pkg = new RequestPackage();
         pkg.setMethod(HttpMethod.PUT);
-        pkg.setUri(uri +"/wils0751");
+        pkg.setUri(uri + building.getBuildingId() +"/wils0751");
         pkg.setParam("address", building.getAddress());
         pkg.setParam("description", building.getDescription());
 

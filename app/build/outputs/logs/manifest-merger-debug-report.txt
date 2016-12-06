@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/src/main/AndroidManifest.xml:2:1-52:12
+ADDED from /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/src/main/AndroidManifest.xml:2:1-58:12
 	package
 		ADDED from /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/src/main/AndroidManifest.xml:3:5-60
 		INJECTED from /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/src/main/AndroidManifest.xml
@@ -38,14 +38,20 @@ ADDED from /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/src/main/A
 	android:name
 		ADDED from /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/src/main/AndroidManifest.xml:10:9-47
 application
-ADDED from /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/src/main/AndroidManifest.xml:12:5-50:19
-MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.4.0] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+ADDED from /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/src/main/AndroidManifest.xml:12:5-56:19
 MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.4.0/AndroidManifest.xml:27:5-20
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:24.2.1] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.1] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:24.2.1] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:24.2.1] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:24.2.1] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:24.2.1] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/AndroidManifest.xml:25:5-20
 MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/AndroidManifest.xml:19:5-20
+MERGED from [com.android.support:design:24.2.1] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:24.2.1] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-vector-drawable:24.2.1] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:animated-vector-drawable:24.2.1] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/src/main/AndroidManifest.xml:15:9-41
 	android:supportsRtl
@@ -100,25 +106,42 @@ activity#com.algonquincollege.wils0751.doorsopenottawa.EditBuildingActivity
 ADDED from /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/src/main/AndroidManifest.xml:42:9-45:20
 	android:name
 		ADDED from /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/src/main/AndroidManifest.xml:42:19-55
+activity#com.algonquincollege.wils0751.doorsopenottawa.SearchableActivity
+ADDED from /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/src/main/AndroidManifest.xml:46:9-51:20
+	android:name
+		ADDED from /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/src/main/AndroidManifest.xml:46:19-53
+intent-filter#android.intent.action.SEARCH
+ADDED from /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/src/main/AndroidManifest.xml:47:13-49:29
+action#android.intent.action.SEARCH
+ADDED from /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/src/main/AndroidManifest.xml:48:17-71
+	android:name
+		ADDED from /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/src/main/AndroidManifest.xml:48:25-68
 meta-data#com.google.android.gms.version
-ADDED from /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/src/main/AndroidManifest.xml:47:9-49:69
+ADDED from /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/src/main/AndroidManifest.xml:53:9-55:69
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:21:9-23:69
 	android:value
-		ADDED from /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/src/main/AndroidManifest.xml:49:13-66
+		ADDED from /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/src/main/AndroidManifest.xml:55:13-66
 	android:name
-		ADDED from /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/src/main/AndroidManifest.xml:48:13-58
+		ADDED from /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/src/main/AndroidManifest.xml:54:13-58
 uses-sdk
 INJECTED from /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.4.0] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
 MERGED from [com.google.android.gms:play-services-maps:8.4.0] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.4.0/AndroidManifest.xml:26:5-42
 MERGED from [com.google.android.gms:play-services-base:8.4.0] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/AndroidManifest.xml:18:5-42
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:24.2.1] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-compat:24.2.1] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-media-compat:24.2.1] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:24.2.1] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:24.2.1] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-fragment:24.2.1] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/AndroidManifest.xml:21:5-23:60
 MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:design:24.2.1] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:24.2.1] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-vector-drawable:24.2.1] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:animated-vector-drawable:24.2.1] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:24.2.1] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.1/AndroidManifest.xml:20:5-43
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:23.4.0] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:support-v4:24.2.1] /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/AndroidManifest.xml:23:9-51
 	android:targetSdkVersion
 		INJECTED from /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/src/main/AndroidManifest.xml

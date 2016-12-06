@@ -3,12 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.4.0/jars/classes.jar"
+        jar="/Users/ShannonWilson/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="04de44f90606c77f3b28cf44861f306290505aac">
-        <dex dex="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-maps-8.4.0_23ba1f2e6402fb4a8394538927b0d93764f95785/classes.dex" />
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.1_8899a4be8dd5e2e94d98c837f504d935fb9f7f79/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_c59760c713b5fd8b0dfd077a677b0dcf3e643292/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -21,30 +30,39 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jar="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.4.0_d0f767d52e99604ae9d5fef87954ea82c82b8eb1/classes.dex" />
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.1_b8cf279d8a50c8bc45ca9a9615a5c12871ae18f1/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jar="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="6e06e28805bd953b03a8d7f86bd736e44a4da5fc">
-        <dex dex="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_9c661dcc2d4dcd2d8f89a24cce889c95771e528e/classes.dex" />
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_38015d481064ffb95098abd24c9409733cfb9bd8/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        jar="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
-        <dex dex="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-23.4.0_6f7771f5df89e9e25af9e307f1ead0a91558adad/classes.dex" />
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.1_1916d5658204bdb9fc6379532b69a9ea2ff8a006/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_bec78d81326e4838135c29748fb69440671b24ac/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -52,26 +70,53 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="4b594f80cd704023fb1a4a8e778405ef3fe826f5">
+        sha1="22d8b9697c069e7c0657a7ee5ef65856c9d59ecd">
         <dex dex="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_3ab9f5d945af21cd94eef1f8b246e951474d15be/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jar="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.4.0_295b25479e6f6c26283607fb164d1a5304004e01/classes.dex" />
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.1_d5c5fec4d723863c29e9ecc2d7f0f879d5ca183d/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jar="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.4.0_6fc75a5ce6d96b118085de8b4183273e3eab305c/classes.dex" />
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.1_f7eb16a79c7015a7a7b718952b98989a2f8b24aa/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.1_064209c2f3e6547e853284b872b7fb1fb3b6ec92/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.1_aed88fbf105aa27712f9ca5dc202370056578786/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="65f182549a60a6165e775bc7815222da0bcfff3a">
+        <dex dex="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_9c661dcc2d4dcd2d8f89a24cce889c95771e528e/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -84,21 +129,75 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jar="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.4.0_a282dbb4b68d206e42920f410ccb096f1be40686/classes.dex" />
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_68eec7ac7da2fb4e26c0879088814abb32bb4939/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/ShannonWilson/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jar="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
-        <dex dex="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.4.0_9085be978c51fb6fe078ee16a14f322c18ab5e86/classes.dex" />
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.1_36d300740b0b2f7f9610a6a654627ca656d387cf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.2.1_29f7252b4511e41d5bc994d8dd81d9e2f14fab64/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="04de44f90606c77f3b28cf44861f306290505aac">
+        <dex dex="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-maps-8.4.0_23ba1f2e6402fb4a8394538927b0d93764f95785/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.2.1_accbeb8a55b7e93bb5d6159e6992abe453e478e6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_ec2b71c22cf3f0ca85eaa865d952a3d5fccf7669/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.1_f49c205ea1cc581945fa2fec54179f8df4874de6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.1_b4d12d7724f5418284e7b00523b82a756659e267/classes.dex" />
     </item>
     <item
         is-multidex="true"

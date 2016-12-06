@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.media.Image;
 import android.net.Uri;
 import android.os.AsyncTask;
@@ -44,6 +46,10 @@ public class NewBuildingActivity extends Activity {
     public String address;
     public String description;
     public ImageView buildingImage;
+    public String imagePath;
+    public String thePath;
+    private Uri fullPhotoUri;
+
 
     @Override
 
@@ -71,12 +77,15 @@ public class NewBuildingActivity extends Activity {
 
                 createBuilding(REST_URI);
 
+                uploadImage(REST_URI_IMAGE);
+
             }
         });
         cancelButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                finish();
+//                Toast.makeText(getApplicationContext(), getPath(fullPhotoUri), Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -89,6 +98,7 @@ public class NewBuildingActivity extends Activity {
 
                 Intent galleryIntent = new Intent(Intent.ACTION_PICK,
                         MediaStore.Images.Media.INTERNAL_CONTENT_URI);
+                galleryIntent.setType("image/*");
 // Start the Intent
                 startActivityForResult(galleryIntent, RESULT_LOAD_IMAGE);
             }
@@ -106,19 +116,38 @@ public class NewBuildingActivity extends Activity {
             buildingImage =(ImageView) findViewById(R.id.imageView1);
             buildingImage.setImageBitmap(imageBitmap);
         }
-        if (requestCode == 1) {
+        if (requestCode == RESULT_LOAD_IMAGE) {
             final Bundle extras = data.getExtras();
             if (extras != null) {
                 //Get image
                 Bitmap ProfilePic = extras.getParcelable("data");
                 buildingImage.setImageBitmap(ProfilePic);
-                Uri fullPhotoUri = data.getData();
+                fullPhotoUri = data.getData();
                 buildingImage.setImageURI(fullPhotoUri);
 
-             }
+
+
+            }
+
         }
     }
+  //method to get the file path from uri
+    public String getPath(Uri uri) {
+        Cursor cursor = getContentResolver().query(uri, null, null, null, null);
+        cursor.moveToFirst();
+        String document_id = cursor.getString(0);
+        document_id = document_id.substring(document_id.lastIndexOf(":") + 1);
+        cursor.close();
 
+        cursor = getContentResolver().query(
+                android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
+                null, MediaStore.Images.Media._ID + " = ? ", new String[]{document_id}, null);
+        cursor.moveToFirst();
+        String path = cursor.getString(cursor.getColumnIndex(MediaStore.Images.Media.DATA));
+        cursor.close();
+
+        return path;
+    }
 
 
 
@@ -129,30 +158,34 @@ public class NewBuildingActivity extends Activity {
             building.setBuildingId(0);
             building.setName(name);
             building.setAddress(address);
-
             building.setDescription(description);
+
 
 //
             RequestPackage pkg = new RequestPackage();
             pkg.setMethod(HttpMethod.POST);
             pkg.setUri(uri);
-//            pkg.setParam("buildingId", building.getBuildingId() + "");
+//         pkg.setParam("buildingId", building.getBuildingId() + "");
             pkg.setParam("name", building.getName());
             pkg.setParam("address", building.getAddress());
-            pkg.setParam("image", building.getImage());
             pkg.setParam("description", building.getDescription());
 
 
            DoTask postTask = new DoTask();
             postTask.execute(pkg);
+
         }
     private void uploadImage(String uri){
         Building building = new Building();
-        building.setImage("tests.jpg");
+        building.setImage("images/test");
 
         RequestPackage pkg = new RequestPackage();
         pkg.setMethod(HttpMethod.POST);
-        pkg.setUri(uri + "138" + "/image" );
+        pkg.setUri(uri +  152 + "/image" );
+        pkg.setParam("image" , building.getImage());
+
+        DoTask postTask =  new DoTask();
+        postTask.execute(pkg);
     }
 
     private class DoTask extends AsyncTask<RequestPackage, String, String> {

@@ -3,6 +3,7 @@ package com.algonquincollege.wils0751.doorsopenottawa;
 import android.Manifest;
 import android.app.DialogFragment;
 import android.app.ListActivity;
+import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -24,6 +25,7 @@ import android.widget.ArrayAdapter;
 import android.widget.CompoundButton;
 import android.widget.ListView;
 import android.widget.ProgressBar;
+import android.widget.SearchView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
@@ -60,7 +62,7 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
     SwipeRefreshLayout mSwipeRefreshLayout;
 
     private AboutDialogFragment mAboutDialog;
-
+    ToggleButton toggleButton;
 
     private ProgressBar pb;
     private List<MyTask> tasks;
@@ -137,6 +139,7 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
         );
 
 
+
         if (isOnline()) {
             requestData(REST_URI);
         } else {
@@ -148,6 +151,15 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
+        // Associate searchable configuration with the SearchView
+        SearchManager searchManager =
+                (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+        SearchView searchView =
+                (SearchView) menu.findItem(R.id.search).getActionView();
+        searchView.setSearchableInfo(
+                searchManager.getSearchableInfo(getComponentName()));
+
+
         return true;
     }
 
@@ -223,7 +235,7 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
         RequestPackage pkg = new RequestPackage();
         pkg.setMethod( HttpMethod.DELETE );
         // DELETE the planet with Id 8
-        pkg.setUri( uri + "/138" );
+        pkg.setUri( uri + "/139" );
         DoTask deleteTask = new DoTask();
         deleteTask.execute( pkg );
     }
@@ -312,8 +324,8 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
             }
         }
     }
-
-
+//
+//
 //    @Override
 //    protected void onDestroy(){
 //        super.onDestroy();

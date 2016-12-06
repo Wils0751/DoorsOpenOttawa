@@ -39,17 +39,7 @@
         android:textSize="16sp"
         android:textColor="#aec6cf"/>
 
-    <!--<ToggleButton-->
-        <!--android:layout_width="32dp"-->
-        <!--android:layout_height="32dp"-->
-        <!--android:id="@+id/myToggleButton"-->
-        <!--android:layout_centerHorizontal="true"-->
-        <!--android:layout_centerVertical="true"-->
-        <!--android:textOn=""-->
-        <!--android:textOff=""-->
-        <!--android:layout_alignParentRight="true"-->
-        <!--android:layout_alignParentTop="true"-->
-        <!--style="?android:attr/starStyle"/>-->
+
 
 
 </RelativeLayout>
