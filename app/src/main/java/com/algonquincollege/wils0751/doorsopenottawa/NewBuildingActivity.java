@@ -38,7 +38,7 @@ import static android.R.attr.start;
 public class NewBuildingActivity extends Activity {
 
     public static final String REST_URI = "https://doors-open-ottawa-hurdleg.mybluemix.net/buildings";
-    public static final String REST_URI_IMAGE="http://doors-open-ottawa-hurdleg.mybluemix.net/buildings/";
+    public static final String REST_URI_IMAGE = "http://doors-open-ottawa-hurdleg.mybluemix.net/buildings/";
     private static int RESULT_LOAD_IMAGE = 1;
     String ImageDecode;
     private static final String TAG = "";
@@ -59,7 +59,7 @@ public class NewBuildingActivity extends Activity {
         setContentView(R.layout.add_building);
 
         Button okButton = (Button) findViewById(R.id.addbutton);
-
+        buildingImage=(ImageView)findViewById(R.id.doorsopenimage);
         Button cancelButton = (Button) findViewById(R.id.cancelbutton);
         okButton.setOnClickListener(new View.OnClickListener() {
 
@@ -68,7 +68,6 @@ public class NewBuildingActivity extends Activity {
                 EditText buildingName = (EditText) findViewById(R.id.buildingName);
                 EditText buildingAddress = (EditText) findViewById(R.id.buildingAddress);
                 EditText buildingDescription = (EditText) findViewById(R.id.buildingDescription);
-
 
 
                 name = buildingName.getText().toString();
@@ -96,8 +95,7 @@ public class NewBuildingActivity extends Activity {
             public void onClick(View c) {
 
 
-                Intent galleryIntent = new Intent(Intent.ACTION_PICK,
-                        MediaStore.Images.Media.INTERNAL_CONTENT_URI);
+                Intent galleryIntent = new Intent(Intent.ACTION_GET_CONTENT);
                 galleryIntent.setType("image/*");
 // Start the Intent
                 startActivityForResult(galleryIntent, RESULT_LOAD_IMAGE);
@@ -106,32 +104,25 @@ public class NewBuildingActivity extends Activity {
     }
 
 
-
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (resultCode != RESULT_OK) {
-            Bundle extras = data.getExtras();
-            Bitmap imageBitmap = (Bitmap) extras.get("data");
-            buildingImage =(ImageView) findViewById(R.id.imageView1);
-            buildingImage.setImageBitmap(imageBitmap);
-        }
-        if (requestCode == RESULT_LOAD_IMAGE) {
-            final Bundle extras = data.getExtras();
-            if (extras != null) {
-                //Get image
-                Bitmap ProfilePic = extras.getParcelable("data");
-                buildingImage.setImageBitmap(ProfilePic);
-                fullPhotoUri = data.getData();
-                buildingImage.setImageURI(fullPhotoUri);
-
-
-
+        Log.e("TAG", "OnActivityResult");
+        if (resultCode == Activity.RESULT_OK && requestCode == RESULT_LOAD_IMAGE) {
+            fullPhotoUri = data.getData();
+            if (fullPhotoUri == null) {
+                Log.e("TAG","FullPhotoUri");
+                return;
             }
+            buildingImage.setImageURI(fullPhotoUri);
+            Log.e("TAG", fullPhotoUri.getPath());
+            thePath = getPath(fullPhotoUri);
+            Log.e("TAG", thePath);
 
         }
     }
-  //method to get the file path from uri
+
+    //method to get the file path from uri
     public String getPath(Uri uri) {
         Cursor cursor = getContentResolver().query(uri, null, null, null, null);
         cursor.moveToFirst();
@@ -150,41 +141,41 @@ public class NewBuildingActivity extends Activity {
     }
 
 
-
     private void createBuilding(String uri) {
-            Building building = new Building();
+        Building building = new Building();
 
 
-            building.setBuildingId(0);
-            building.setName(name);
-            building.setAddress(address);
-            building.setDescription(description);
+        building.setBuildingId(0);
+        building.setName(name);
+        building.setAddress(address);
+        building.setDescription(description);
 
 
 //
-            RequestPackage pkg = new RequestPackage();
-            pkg.setMethod(HttpMethod.POST);
-            pkg.setUri(uri);
+        RequestPackage pkg = new RequestPackage();
+        pkg.setMethod(HttpMethod.POST);
+        pkg.setUri(uri);
 //         pkg.setParam("buildingId", building.getBuildingId() + "");
-            pkg.setParam("name", building.getName());
-            pkg.setParam("address", building.getAddress());
-            pkg.setParam("description", building.getDescription());
+        pkg.setParam("name", building.getName());
+        pkg.setParam("address", building.getAddress());
+        pkg.setParam("description", building.getDescription());
 
 
-           DoTask postTask = new DoTask();
-            postTask.execute(pkg);
+        DoTask postTask = new DoTask();
+        postTask.execute(pkg);
 
-        }
-    private void uploadImage(String uri){
+    }
+
+    private void uploadImage(String uri) {
         Building building = new Building();
-        building.setImage("images/test");
+        building.setImage(thePath);
 
         RequestPackage pkg = new RequestPackage();
         pkg.setMethod(HttpMethod.POST);
-        pkg.setUri(uri +  152 + "/image" );
-        pkg.setParam("image" , building.getImage());
+        pkg.setUri(uri + 145 + "/image");
+        pkg.setParam("image", building.getImage());
 
-        DoTask postTask =  new DoTask();
+        DoTask postTask = new DoTask();
         postTask.execute(pkg);
     }
 
@@ -202,6 +193,35 @@ public class NewBuildingActivity extends Activity {
             String content = HttpManager.getData(params[0], "wils0751", "password");
 
             return content;
+        }
+
+        @Override
+        protected void onPostExecute(String result) {
+
+//            pb.setVisibility(View.INVISIBLE);
+
+            if (result == null) {
+                Toast.makeText(NewBuildingActivity.this, "Web service not available", Toast.LENGTH_LONG).show();
+                return;
+            }
+        }
+    }
+    private class MyTask extends AsyncTask<RequestPackage, Void, String> {
+
+        @Override
+        protected void onPreExecute() {
+//            pb.setVisibility(View.VISIBLE);
+
+        }
+
+        @Override
+        protected String doInBackground(RequestPackage... params) {
+
+            String content = HttpManager.getData(params[0], "wils0751", "password");
+
+            return content;
+
+
         }
 
         @Override

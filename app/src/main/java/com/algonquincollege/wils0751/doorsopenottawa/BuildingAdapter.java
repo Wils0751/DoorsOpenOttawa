@@ -72,8 +72,12 @@ public class BuildingAdapter extends ArrayAdapter<Building> {
             container.building = building;
             container.view = view;
 
-            ImageLoader loader = new ImageLoader();
-            loader.execute(container);
+            try {
+                ImageLoader loader = new ImageLoader();
+                loader.execute(container);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
 
         return view;
