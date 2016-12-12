@@ -36,9 +36,10 @@
         android:inputType="textPersonName"
         android:text=""
         android:ems="10"
-        android:id="@+id/buildingaddress"
-        android:layout_marginTop="131dp"
-        android:layout_below="@+id/editbuilding"
+        android:id="@+id/buildingname"
+        android:hint="description"
+        android:layout_marginBottom="50dp"
+        android:layout_alignBottom="@+id/buildingaddress"
         android:layout_alignParentStart="true" />
 
     <EditText
@@ -47,9 +48,10 @@
         android:inputType="textPersonName"
         android:text=""
         android:ems="10"
-        android:id="@+id/buildingname"
-        android:layout_marginBottom="50dp"
-        android:layout_alignBottom="@+id/buildingaddress"
+        android:hint="address"
+        android:id="@+id/buildingaddress"
+        android:layout_marginTop="131dp"
+        android:layout_below="@+id/editbuilding"
         android:layout_alignParentStart="true" />
 
 </RelativeLayout>

@@ -6,6 +6,7 @@ import android.location.Address;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.text.style.BulletSpan;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -23,40 +24,40 @@ import com.algonquincollege.wils0751.doorsopenottawa.model.Building;
 
 public class EditBuildingActivity extends Activity {
     public static final String REST_URI = "https://doors-open-ottawa-hurdleg.mybluemix.net/buildings/";
-    private EditText buildingName;
+    private EditText buildingDescription;
     private EditText buildingAddress;
     private Button savebtn;
     private Button cancelbtn;
     public String Address;
     public String Description;
+    public Integer buildingid;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit);
 
-        buildingName = (EditText) findViewById(R.id.buildingname);
+        buildingDescription = (EditText) findViewById(R.id.buildingname);
         buildingAddress = (EditText) findViewById(R.id.buildingaddress);
         Bundle bundle = getIntent().getExtras();
         if (bundle != null) {
-            String buildingDescriptionFromMainActivity = bundle.getString("description");
-            String buildingAddressFromMainActivity = bundle.getString("address");
+            Integer buildingIdformMainActivity = bundle.getInt("buildingid");
 
-            buildingName.setText(buildingDescriptionFromMainActivity);
-            buildingAddress.setText(buildingAddressFromMainActivity);
+            buildingid = buildingIdformMainActivity;
+
+            Log.e("Log",String.valueOf(buildingid));
         }
+
 
         savebtn = (Button) findViewById(R.id.save);
         savebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                Description = buildingName.getText().toString();
-                Address = buildingAddress.getText().toString();
-
-                updateBuilding(REST_URI);
+                updateBuilding(REST_URI + buildingid);
                 Toast.makeText(getApplicationContext(), Description + Address, Toast.LENGTH_SHORT).show();
                 finish();
+
             }
         });
         cancelbtn = (Button) findViewById(R.id.cancelbutton);
@@ -70,20 +71,18 @@ public class EditBuildingActivity extends Activity {
 
     }
     private void updateBuilding(String uri) {
+        Address = buildingAddress.getText().toString();
+        Description = buildingDescription.getText().toString();
         Building building = new Building();
-        String address = buildingName.getText().toString();
-        String description = buildingAddress.getText().toString();
 
-        if (!address.equals(building.getAddress())) {
-            building.setAddress(address);
-        }
-        if (!description.equals(building.getDescription())) {
-            building.setDescription(description);
-        }
+        building.setBuildingId(0);
+        building.setAddress(Address);
+        building.setDescription(Description);
+
 
         RequestPackage pkg = new RequestPackage();
         pkg.setMethod(HttpMethod.PUT);
-        pkg.setUri(uri + building.getBuildingId() +"/wils0751");
+        pkg.setUri(uri);
         pkg.setParam("address", building.getAddress());
         pkg.setParam("description", building.getDescription());
 
@@ -115,6 +114,8 @@ public class EditBuildingActivity extends Activity {
             if (result == null) {
                 Toast.makeText(EditBuildingActivity.this, "Web service not available", Toast.LENGTH_LONG).show();
                 return;
+            } else{
+                Log.e("Log", result);
             }
         }
     }

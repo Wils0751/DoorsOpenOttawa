@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * Parses the JSON file coming in and get specific information from it returning strings
  *
- * @author Shannon Wilson (Wils0751) Geemakun Storey (Stor0095)
+ * @author Shannon Wilson (Wils0751)
  */
 
 public class BuildingJSONParser {

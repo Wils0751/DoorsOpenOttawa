@@ -15,6 +15,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,6 +33,7 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyDfvAiRZepaWKjoQbctqgyOJh73A4oXdow" />
         <activity android:name=".DetailActivity">
+
             <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
             <uses-permission android:name="android.permission.INTERNET" />
         </activity>
@@ -43,12 +45,7 @@
 
 
         </activity>
-        <activity android:name=".SearchableActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.SEARCH" />
-            </intent-filter>
-
-        </activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+       <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
      App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
         <meta-data
             android:name="com.google.android.gms.version"

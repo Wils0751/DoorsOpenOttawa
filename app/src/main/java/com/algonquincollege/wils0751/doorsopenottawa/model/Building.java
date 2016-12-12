@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * Model handles the getters and setters and the open_hours
  *
- * @author Shannon Wilson (Wils0751) Geemakun Storey (Stor0095)
+ * @author Shannon Wilson (Wils0751)
  *
  */
 public class Building {

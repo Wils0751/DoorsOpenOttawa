@@ -40,13 +40,12 @@ public class NewBuildingActivity extends Activity {
     public static final String REST_URI = "https://doors-open-ottawa-hurdleg.mybluemix.net/buildings";
     public static final String REST_URI_IMAGE = "http://doors-open-ottawa-hurdleg.mybluemix.net/buildings/";
     private static int RESULT_LOAD_IMAGE = 1;
-    String ImageDecode;
     private static final String TAG = "";
     public String name;
     public String address;
     public String description;
     public ImageView buildingImage;
-    public String imagePath;
+
     public String thePath;
     private Uri fullPhotoUri;
 
@@ -75,8 +74,9 @@ public class NewBuildingActivity extends Activity {
                 description = buildingDescription.getText().toString();
 
                 createBuilding(REST_URI);
+                finish();
 
-                uploadImage(REST_URI_IMAGE);
+//                uploadImage(REST_URI_IMAGE);
 
             }
         });
@@ -148,6 +148,7 @@ public class NewBuildingActivity extends Activity {
         building.setBuildingId(0);
         building.setName(name);
         building.setAddress(address);
+        building.setImage(thePath);
         building.setDescription(description);
 
 
@@ -156,6 +157,7 @@ public class NewBuildingActivity extends Activity {
         pkg.setMethod(HttpMethod.POST);
         pkg.setUri(uri);
 //         pkg.setParam("buildingId", building.getBuildingId() + "");
+        pkg.setParam("image", building.getImage());
         pkg.setParam("name", building.getName());
         pkg.setParam("address", building.getAddress());
         pkg.setParam("description", building.getDescription());
@@ -196,7 +198,7 @@ public class NewBuildingActivity extends Activity {
         }
 
         @Override
-        protected void onPostExecute(String result) {
+            protected void onPostExecute(String result) {
 
 //            pb.setVisibility(View.INVISIBLE);
 
@@ -231,7 +233,12 @@ public class NewBuildingActivity extends Activity {
 
             if (result == null) {
                 Toast.makeText(NewBuildingActivity.this, "Web service not available", Toast.LENGTH_LONG).show();
+
+
                 return;
+
+            }else{
+                Log.e("Log", result);
             }
         }
     }

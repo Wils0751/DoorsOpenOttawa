@@ -2,5 +2,9 @@
     {
         "merged": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/merged/debug/menu/main.xml",
         "source": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/src/main/res/menu/main.xml"
+    },
+    {
+        "merged": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/res/merged/debug/menu/detail.xml",
+        "source": "/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/src/main/res/menu/detail.xml"
     }
 ]

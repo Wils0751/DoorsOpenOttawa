@@ -49,7 +49,7 @@ import java.util.Set;
 /**
  * Main activity class handles all the stuff displaying on the screen
  *
- * @author Geemakun Storey (Stor0095), Shannon Wilson(Wils0751)
+ * @author Shannon Wilson(Wils0751)
  */
 public class MainActivity extends ListActivity  /*implements AdapterView.OnItemClickListener*/ {
 
@@ -62,28 +62,35 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
     SwipeRefreshLayout mSwipeRefreshLayout;
 
     private AboutDialogFragment mAboutDialog;
-    ToggleButton toggleButton;
+
 
     private ProgressBar pb;
     private List<MyTask> tasks;
 
     private List<Building> buildingList;
+
+    private BuildingAdapter adapter;
+    private SearchView searchView;
+
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
-     */
+     */;
     private GoogleApiClient client;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        SharedPreferences settings = getSharedPreferences(getResources().getString(R.string.app_name), Context.MODE_PRIVATE);
+//        SharedPreferences prefs = getSharedPreferences(SHARED_PREFS_FILE, Context.MODE_PRIVATE);
+        SharedPreferences prefs = getSharedPreferences( getResources().getString(R.string.app_name), Context.MODE_PRIVATE );
 
         pb = (ProgressBar) findViewById(R.id.progressBar);
         pb.setVisibility(View.INVISIBLE);
 
         mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swiperefresh);
+
+
 
 
         tasks = new ArrayList<>();
@@ -99,6 +106,7 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
                 intent.putExtra("Description", theSelectedBuilding.getDescription());
                 intent.putExtra("Address", theSelectedBuilding.getAddress());
                 intent.putExtra("Date", theSelectedBuilding.getDate());
+                intent.putExtra("buildingid", theSelectedBuilding.getBuildingId());
 
                 startActivity(intent);
             }
@@ -110,8 +118,9 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
 
                 Intent i = new Intent(getApplicationContext(), EditBuildingActivity.class);
                 i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                i.putExtra("description", theSelectedBuilding.getDescription());
-                i.putExtra("address", theSelectedBuilding.getAddress());
+//                i.putExtra("description", theSelectedBuilding.getDescription());
+//                i.putExtra("address", theSelectedBuilding.getAddress());
+                i.putExtra("buildingid", theSelectedBuilding.getBuildingId());
 
                 startActivity(i);
                 return true;
@@ -154,7 +163,7 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
         // Associate searchable configuration with the SearchView
         SearchManager searchManager =
                 (SearchManager) getSystemService(Context.SEARCH_SERVICE);
-        SearchView searchView =
+        searchView =
                 (SearchView) menu.findItem(R.id.search).getActionView();
         searchView.setSearchableInfo(
                 searchManager.getSearchableInfo(getComponentName()));
@@ -162,6 +171,8 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
 
         return true;
     }
+
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -178,7 +189,7 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
                     Collections.sort(buildingList, new Comparator<Building>() {
                         @Override
                         public int compare(Building lhs, Building rhs) {
-                            Log.i("PLANETS", "Sorting planets by name (a-z)");
+                            Log.i("BUILDING", "Sorting planets by name (a-z)");
                             return lhs.getName().compareTo(rhs.getName());
                         }
                     });
@@ -188,7 +199,7 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
                     Collections.sort(buildingList, Collections.reverseOrder(new Comparator<Building>() {
                         @Override
                         public int compare(Building lhs, Building rhs) {
-                            Log.i("PLANETS", "Sorting planets by name (z-a)");
+                            Log.i("BUILDING", "Sorting planets by name (z-a)");
                             return lhs.getName().compareTo(rhs.getName());
                         }
                     }));
@@ -208,13 +219,7 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
             startActivity(new Intent(this, NewBuildingActivity.class));
 
         }
-        if (item.getItemId() ==R.id.trash){
-            if (isOnline()) {
-                deletePlanet( REST_URI );
-            } else {
-                Toast.makeText(this, "Network isn't available", Toast.LENGTH_LONG).show();
-            }
-        }
+
 
         // remember which sort option the user picked
 
@@ -231,21 +236,33 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
 
     }
 
-    private void deletePlanet(String uri) {
-        RequestPackage pkg = new RequestPackage();
-        pkg.setMethod( HttpMethod.DELETE );
-        // DELETE the planet with Id 8
-        pkg.setUri( uri + "/139" );
-        DoTask deleteTask = new DoTask();
-        deleteTask.execute( pkg );
-    }
+
+
 
 
     protected void updateDisplay() {
         //Use BuildingAdapter to display data
+//        adapter = new BuildingAdapter(this, R.layout.item_building, buildingList);
+//        setListAdapter(adapter);
+        if(buildingList!=null) {
+            adapter = new BuildingAdapter(this, R.layout.item_building, buildingList);
+            setListAdapter(adapter);
+            searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+                @Override
+                public boolean onQueryTextSubmit(String query) {
+                    adapter.filter(query);
+                    return true;
+                }
 
-        BuildingAdapter adapter = new BuildingAdapter(this, R.layout.item_building, buildingList);
-        setListAdapter(adapter);
+                @Override
+                public boolean onQueryTextChange(String newText) {
+                    adapter.filter(newText);
+                    return true;
+                }
+            });
+        }
+
+
     }
 
     protected boolean isOnline() {

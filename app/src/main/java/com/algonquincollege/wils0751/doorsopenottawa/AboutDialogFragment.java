@@ -9,7 +9,7 @@ import android.os.Bundle;
 /**
  * Handles what is in the about Dialog
  *
- * @author Geemakun Storey (Stor0095), Shannon Wilson(Wils0751)
+ * @author  Shannon Wilson(Wils0751)
  */
 
 public class AboutDialogFragment extends DialogFragment {
