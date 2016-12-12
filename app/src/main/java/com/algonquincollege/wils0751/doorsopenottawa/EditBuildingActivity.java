@@ -33,6 +33,7 @@ public class EditBuildingActivity extends Activity {
     public Integer buildingid;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

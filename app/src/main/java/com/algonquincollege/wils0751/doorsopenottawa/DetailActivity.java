@@ -92,22 +92,12 @@ public class DetailActivity extends FragmentActivity implements OnMapReadyCallba
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() ==R.id.trash) {
-            new AlertDialog.Builder(this)
-                    .setMessage("Message")
-                    .setCancelable(false)
-                    .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int id) {
-                            deletePlanet(REST_URI + buildingid);
-                        }
-                    })
-                    .setNegativeButton("No", null)
-                    .show();
-
-
-
+        if (item.getItemId() == R.id.trash) {
+            AlertDialog dialog =  AskOption();
+            dialog.show();
 
         }
+
 
         return false;
     }
