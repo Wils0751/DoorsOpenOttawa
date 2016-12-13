@@ -744,7 +744,7 @@ int id activity_chooser_view_content 0x7f0d004a
 int id activity_detail 0x7f0d0077
 int id activity_main 0x7f0d0081
 int id add 0x7f0d001a
-int id addbutton 0x7f0d0089
+int id addbutton 0x7f0d008a
 int id addressCell 0x7f0d0097
 int id adjust_height 0x7f0d0036
 int id adjust_width 0x7f0d0037
@@ -758,11 +758,11 @@ int id buildingAddress 0x7f0d0086
 int id buildingCellDescription 0x7f0d0096
 int id buildingDescription 0x7f0d0087
 int id buildingName 0x7f0d0084
-int id buildingaddress 0x7f0d0080
-int id buildingname 0x7f0d007f
+int id buildingaddress 0x7f0d007e
+int id buildingname 0x7f0d007d
 int id buttonPanel 0x7f0d0051
 int id cancel_action 0x7f0d009a
-int id cancelbutton 0x7f0d007e
+int id cancelbutton 0x7f0d007f
 int id center 0x7f0d0023
 int id center_horizontal 0x7f0d0024
 int id center_vertical 0x7f0d0025
@@ -783,7 +783,7 @@ int id design_menu_item_action_area_stub 0x7f0d0092
 int id design_menu_item_text 0x7f0d0091
 int id design_navigation_view 0x7f0d0090
 int id disableHome 0x7f0d000e
-int id doorsopenimage 0x7f0d008a
+int id doorsopenimage 0x7f0d0089
 int id edit 0x7f0d00a8
 int id edit_query 0x7f0d006a
 int id editbuilding 0x7f0d007c
@@ -833,7 +833,7 @@ int id progress_horizontal 0x7f0d0007
 int id radio 0x7f0d0061
 int id right 0x7f0d0029
 int id satellite 0x7f0d0039
-int id save 0x7f0d007d
+int id save 0x7f0d0080
 int id screen 0x7f0d001c
 int id scroll 0x7f0d0018
 int id scrollIndicatorDown 0x7f0d005b

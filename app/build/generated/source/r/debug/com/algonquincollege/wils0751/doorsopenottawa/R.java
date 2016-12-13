@@ -2875,7 +2875,7 @@ containing a value of this type.
         public static final int activity_detail=0x7f0d0077;
         public static final int activity_main=0x7f0d0081;
         public static final int add=0x7f0d001a;
-        public static final int addbutton=0x7f0d0089;
+        public static final int addbutton=0x7f0d008a;
         public static final int addressCell=0x7f0d0097;
         public static final int adjust_height=0x7f0d0036;
         public static final int adjust_width=0x7f0d0037;
@@ -2889,11 +2889,11 @@ containing a value of this type.
         public static final int buildingCellDescription=0x7f0d0096;
         public static final int buildingDescription=0x7f0d0087;
         public static final int buildingName=0x7f0d0084;
-        public static final int buildingaddress=0x7f0d0080;
-        public static final int buildingname=0x7f0d007f;
+        public static final int buildingaddress=0x7f0d007e;
+        public static final int buildingname=0x7f0d007d;
         public static final int buttonPanel=0x7f0d0051;
         public static final int cancel_action=0x7f0d009a;
-        public static final int cancelbutton=0x7f0d007e;
+        public static final int cancelbutton=0x7f0d007f;
         public static final int center=0x7f0d0023;
         public static final int center_horizontal=0x7f0d0024;
         public static final int center_vertical=0x7f0d0025;
@@ -2914,7 +2914,7 @@ containing a value of this type.
         public static final int design_menu_item_text=0x7f0d0091;
         public static final int design_navigation_view=0x7f0d0090;
         public static final int disableHome=0x7f0d000e;
-        public static final int doorsopenimage=0x7f0d008a;
+        public static final int doorsopenimage=0x7f0d0089;
         public static final int edit=0x7f0d00a8;
         public static final int edit_query=0x7f0d006a;
         public static final int editbuilding=0x7f0d007c;
@@ -2964,7 +2964,7 @@ containing a value of this type.
         public static final int radio=0x7f0d0061;
         public static final int right=0x7f0d0029;
         public static final int satellite=0x7f0d0039;
-        public static final int save=0x7f0d007d;
+        public static final int save=0x7f0d0080;
         public static final int screen=0x7f0d001c;
         public static final int scroll=0x7f0d0018;
         public static final int scrollIndicatorDown=0x7f0d005b;

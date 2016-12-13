@@ -91,7 +91,7 @@ public class EditBuildingActivity extends AppCompatActivity{
         if (item.getItemId() == R.id.trash) {
             AlertDialog dialog = AskOption();
             dialog.show();
-//            deletePlanet(REST_URI + buildingid);
+
 
         }
         return false;

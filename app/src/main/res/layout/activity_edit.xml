@@ -1,34 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#565656">
+
 
     <TextView
         android:text="Edit a Building"
         android:layout_width="208dp"
         android:layout_height="wrap_content"
         android:id="@+id/editbuilding"
-        android:textSize="24sp" />
-
-
-    <Button
-        android:text="Save"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_toEndOf="@+id/editbuilding"
-        android:layout_marginBottom="91dp"
-        android:id="@+id/save" />
-
-    <Button
-        android:text="Cancel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/cancelbutton"
-        android:layout_alignBaseline="@+id/save"
-        android:layout_alignBottom="@+id/save"
-        android:layout_toStartOf="@+id/save"
-        android:layout_marginEnd="59dp" />
+        android:textSize="30sp"
+        android:textColor="#aec6cf"
+        android:layout_marginTop="71dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -37,10 +24,12 @@
         android:text=""
         android:ems="10"
         android:id="@+id/buildingname"
-        android:hint="description"
-        android:layout_marginBottom="50dp"
-        android:layout_alignBottom="@+id/buildingaddress"
-        android:layout_alignParentStart="true" />
+        android:hint="Building Description"
+        android:textColor="#aec6cf"
+        android:layout_below="@+id/editbuilding"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="37dp"
+        android:gravity="center"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -48,10 +37,32 @@
         android:inputType="textPersonName"
         android:text=""
         android:ems="10"
-        android:hint="address"
+        android:hint=" Building Address"
         android:id="@+id/buildingaddress"
-        android:layout_marginTop="131dp"
-        android:layout_below="@+id/editbuilding"
-        android:layout_alignParentStart="true" />
+        android:layout_marginTop="68dp"
+        android:textColor="#aec6cf"
+        android:layout_alignTop="@+id/buildingname"
+        android:layout_alignParentStart="true"
+        android:gravity="center"/>
+
+    <Button
+        android:text="Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancelbutton"
+        android:layout_alignBaseline="@+id/save"
+        android:layout_alignBottom="@+id/save"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="54dp" />
+
+    <Button
+        android:text="Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="67dp"
+        android:id="@+id/save"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="46dp" />
 
 </RelativeLayout>

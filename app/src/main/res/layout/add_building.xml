@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#565656">
 
     <EditText
         android:layout_width="wrap_content"
@@ -11,9 +12,11 @@
         android:inputType="textPersonName"
         android:ems="10"
         android:id="@+id/buildingName"
-        android:hint="BuildingName"
+        android:hint="Building Name"
         android:layout_below="@+id/textView"
-        android:layout_alignStart="@+id/buildingAddress" />
+        android:layout_alignStart="@+id/buildingAddress"
+        android:textColor="#aec6cf"
+        android:gravity="center"/>
 
     <TextView
         android:text="Add Building"
@@ -23,18 +26,9 @@
         android:layout_marginTop="30dp"
         android:textSize="36sp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:id="@+id/buildingAddress"
-        android:hint="buildingAddress"
-        android:layout_below="@+id/buildingName"
-        android:layout_alignStart="@+id/buildingDescription"
-        android:layout_marginTop="34dp" />
+        android:layout_centerHorizontal="true"
+        android:textColor="#aec6cf"
+        android:gravity="center"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -42,10 +36,12 @@
         android:inputType="textPersonName"
         android:ems="10"
         android:id="@+id/buildingDescription"
-        android:hint="buildingDescription"
+        android:hint="Building Description"
         android:layout_below="@+id/buildingAddress"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp"
+        android:textColor="#aec6cf"
+        android:gravity="center"/>
 
     <Button
         android:text="Pick an Image"
@@ -66,22 +62,34 @@
         android:layout_marginStart="12dp"
         android:layout_marginBottom="16dp" />
 
+    <ImageView
+        android:layout_width="100dp"
+        app:srcCompat="@mipmap/doorsopen"
+        android:id="@+id/doorsopenimage"
+        android:layout_height="100dp"
+        android:layout_below="@+id/loadImage"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/buildingAddress"
+        android:hint="Building Address"
+        android:layout_marginTop="14dp"
+        android:textColor="#aec6cf"
+        android:gravity="center"
+        android:layout_below="@+id/buildingName"
+        android:layout_alignStart="@+id/buildingDescription" />
+
     <Button
-        android:text="Ok"
+        android:text="Add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/addbutton"
         android:layout_alignBaseline="@+id/cancelbutton"
         android:layout_alignBottom="@+id/cancelbutton"
         android:layout_alignEnd="@+id/buildingDescription" />
-
-    <ImageView
-        android:layout_width="100dp"
-        app:srcCompat="@mipmap/doorsopen"
-        android:id="@+id/doorsopenimage"
-        android:layout_height="100dp"
-        android:layout_above="@+id/cancelbutton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="25dp" />
 
 </RelativeLayout>
