@@ -71,11 +71,13 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
 
     private BuildingAdapter adapter;
     private SearchView searchView;
+    private ListView list;
+
 
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
-     */;
+     */
     private GoogleApiClient client;
 
     @Override
@@ -87,7 +89,7 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
 
         pb = (ProgressBar) findViewById(R.id.progressBar);
         pb.setVisibility(View.INVISIBLE);
-
+//        list=(ListView) findViewById(R.id.list);
         mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swiperefresh);
 
 
@@ -146,7 +148,6 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
                 }
 
         );
-
 
 
         if (isOnline()) {

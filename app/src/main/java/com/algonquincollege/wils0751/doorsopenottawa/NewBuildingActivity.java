@@ -30,11 +30,11 @@ import java.io.File;
 import static android.R.attr.button;
 import static android.R.attr.data;
 import static android.R.attr.start;
-
 /**
- * Created by ShannonWilson on 2016-11-29.
+ * Allows the user to add a building to the list
+ *
+ * @author Shannon Wilson(Wils0751)
  */
-
 public class NewBuildingActivity extends Activity {
 
     public static final String REST_URI = "https://doors-open-ottawa-hurdleg.mybluemix.net/buildings";

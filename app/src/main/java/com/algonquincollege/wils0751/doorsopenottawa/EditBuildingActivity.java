@@ -17,9 +17,10 @@ import com.algonquincollege.wils0751.doorsopenottawa.Utils.HttpMethod;
 import com.algonquincollege.wils0751.doorsopenottawa.Utils.RequestPackage;
 import com.algonquincollege.wils0751.doorsopenottawa.model.Building;
 
-
 /**
- * Created by ShannonWilson on 2016-12-01.
+ * Allows the user to edit a building of theirs on long click
+ *
+ * @author Shannon Wilson(Wils0751)
  */
 
 public class EditBuildingActivity extends Activity {

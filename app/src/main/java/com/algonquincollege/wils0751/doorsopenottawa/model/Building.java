@@ -46,7 +46,7 @@ public class Building {
     }
 
     public void setAddress(String address) {
-        this.address = address + "Ottawa, Ontario";
+        this.address = address;
     }
 
 

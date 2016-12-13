@@ -5,36 +5,36 @@
     density="560dpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="2876878732682"
+    timestamp="12970861998605"
     token="-4831305550388473472"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="201" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="20" />
+        duration="0" />
     <task
         name="verifier"
-        duration="1" />
+        duration="0" />
 
     <artifact
         location="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
         type="DEX" />
 
     <build
-        timestamp="440784677058"
+        timestamp="6700556825466"
         verifier="MANIFEST_FILE_CHANGE" >
         <artifact
             location="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="2776193636542"
+        timestamp="7102629159208"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
@@ -47,7 +47,14 @@
             type="DEX" />
     </build>
     <build
-        timestamp="2876878732682"
+        timestamp="9659832238399"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.6.2_432010c378e63d0262aabe45286b405d3a711d92/classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="12970861998605"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
