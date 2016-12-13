@@ -17,6 +17,7 @@ LOC: 120
 
 ## 4: Upload a photo
 #### Status: Not working
+
 Just upload an image path not using the correct http aor using form data
 LOC: 20
 
@@ -27,6 +28,7 @@ LOC: 80
 ## 6: Favourite Buildings
 #### Status: Not working
 User's can favourite a building yet it is not storing to localstorage correctly users can scroll through list and the favourite building is persistant.
+
 LOC: 30
 
 ## 7: Sort Buildings Alphabetically
