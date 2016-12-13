@@ -226,6 +226,9 @@ public class BuildingAdapter extends ArrayAdapter<Building> implements Filterabl
 
         @Override
         protected void onPostExecute(BuildingAndView result) {
+            if (result == null){
+                return;
+            }
             ImageView image = (ImageView) result.view.findViewById(R.id.imageView1);
             image.setImageBitmap(result.bitmap);
 //        result.building.setBitmap(result.bitmap);
