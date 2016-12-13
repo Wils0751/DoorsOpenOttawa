@@ -30,6 +30,7 @@ import java.io.File;
 import static android.R.attr.button;
 import static android.R.attr.data;
 import static android.R.attr.start;
+
 /**
  * Allows the user to add a building to the list
  *
@@ -58,7 +59,7 @@ public class NewBuildingActivity extends Activity {
         setContentView(R.layout.add_building);
 
         Button okButton = (Button) findViewById(R.id.addbutton);
-        buildingImage=(ImageView)findViewById(R.id.doorsopenimage);
+        buildingImage = (ImageView) findViewById(R.id.doorsopenimage);
         Button cancelButton = (Button) findViewById(R.id.cancelbutton);
         okButton.setOnClickListener(new View.OnClickListener() {
 
@@ -111,7 +112,7 @@ public class NewBuildingActivity extends Activity {
         if (resultCode == Activity.RESULT_OK && requestCode == RESULT_LOAD_IMAGE) {
             fullPhotoUri = data.getData();
             if (fullPhotoUri == null) {
-                Log.e("TAG","FullPhotoUri");
+                Log.e("TAG", "FullPhotoUri");
                 return;
             }
             buildingImage.setImageURI(fullPhotoUri);
@@ -198,7 +199,7 @@ public class NewBuildingActivity extends Activity {
         }
 
         @Override
-            protected void onPostExecute(String result) {
+        protected void onPostExecute(String result) {
 
 //            pb.setVisibility(View.INVISIBLE);
 
@@ -208,6 +209,7 @@ public class NewBuildingActivity extends Activity {
             }
         }
     }
+
     private class MyTask extends AsyncTask<RequestPackage, Void, String> {
 
         @Override
@@ -237,7 +239,7 @@ public class NewBuildingActivity extends Activity {
 
                 return;
 
-            }else{
+            } else {
                 Log.e("Log", result);
             }
         }

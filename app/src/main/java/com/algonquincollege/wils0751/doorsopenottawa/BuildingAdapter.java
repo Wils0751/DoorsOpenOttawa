@@ -52,9 +52,6 @@ public class BuildingAdapter extends ArrayAdapter<Building> implements Filterabl
     private LruCache<Integer, Bitmap> imageCache;
 
 
-
-
-
     public BuildingAdapter(Context context, int resource, List<Building> objects) {
         super(context, resource, objects);
         this.context = context;
@@ -69,7 +66,7 @@ public class BuildingAdapter extends ArrayAdapter<Building> implements Filterabl
         final int maxMemory = (int) (Runtime.getRuntime().maxMemory() / 1024);
         final int cacheSize = maxMemory / 8;
         imageCache = new LruCache<>(cacheSize);
-        searchlist = new ArrayList<Building>();
+        searchlist = new ArrayList<>();
         searchlist.addAll(buildingList);
 
     }
@@ -81,7 +78,7 @@ public class BuildingAdapter extends ArrayAdapter<Building> implements Filterabl
                 (LayoutInflater) context.getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
         View view = inflater.inflate(R.layout.item_building, parent, false);
 
-        //Display planet name in the TextView widget
+
         final Building building = buildingList.get(position);
         TextView tv = (TextView) view.findViewById(R.id.buildingCellDescription);
         TextView tv1 = (TextView) view.findViewById(R.id.addressCell);
@@ -97,32 +94,31 @@ public class BuildingAdapter extends ArrayAdapter<Building> implements Filterabl
         favourite.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked){
+                if (isChecked) {
                     Log.e("LOG", "adding to arraylist");
 
 
                     favouritelist.add(buildingList.get(position).getBuildingId());
                     save_User_To_Shared_Prefs(context, favouritelist);
-                    Log.e("Log",  "the number is " + favouritelist.contains(buildingList.get(position).getBuildingId()));
+                    Log.e("Log", "the number is " + favouritelist.contains(buildingList.get(position).getBuildingId()));
 
-                }
-                else{
+                } else {
 
                     favouritelist.remove(building.getBuildingId());
 
                     Log.e("LOG", "removing from arraylist");
-                    Log.e("Log",  "the number is " + favouritelist.contains(buildingList.get(position).getBuildingId()));
+                    Log.e("Log", "the number is " + favouritelist.contains(buildingList.get(position).getBuildingId()));
                 }
 
             }
         });
 
 //        favourite.setChecked(true);
-        if(favouritelist != null && favouritelist.contains(buildingList.get(position).getBuildingId())) {
+        if (favouritelist != null && favouritelist.contains(buildingList.get(position).getBuildingId())) {
             Log.e("Log", "is it getting here?");
             favourite.setChecked(true);
         }
-        if(get_User_From_Shared_Prefs(getContext()).contains(buildingList.get(position).getBuildingId())){
+        if (get_User_From_Shared_Prefs(getContext()).contains(buildingList.get(position).getBuildingId())) {
             favourite.setChecked(true);
             Log.e("Log", "testing ");
         }
@@ -161,6 +157,7 @@ public class BuildingAdapter extends ArrayAdapter<Building> implements Filterabl
         prefsEditor.commit();
 
     }
+
     public static List get_User_From_Shared_Prefs(Context context) {
         List favorites;
         SharedPreferences appSharedPrefs = PreferenceManager
@@ -182,18 +179,15 @@ public class BuildingAdapter extends ArrayAdapter<Building> implements Filterabl
         public Bitmap bitmap;
 
     }
+
     public void filter(String charText) {
         charText = charText.toLowerCase(Locale.getDefault());
         buildingList.clear();
         if (charText.length() == 0) {
             buildingList.addAll(searchlist);
-        }
-        else
-        {
-            for (Building b : searchlist)
-            {
-                if (b.getName().toLowerCase(Locale.getDefault()).contains(charText))
-                {
+        } else {
+            for (Building b : searchlist) {
+                if (b.getName().toLowerCase(Locale.getDefault()).contains(charText)) {
                     buildingList.add(b);
                 }
             }
@@ -218,7 +212,7 @@ public class BuildingAdapter extends ArrayAdapter<Building> implements Filterabl
                     building.setBitmap(bitmap);
                     in.close();
                     container.bitmap = bitmap;
-                }catch(FileNotFoundException e){
+                } catch (FileNotFoundException e) {
                     e.printStackTrace();
                 }
                 return container;
@@ -232,11 +226,10 @@ public class BuildingAdapter extends ArrayAdapter<Building> implements Filterabl
 
         @Override
         protected void onPostExecute(BuildingAndView result) {
-            if(result==null) return;
             ImageView image = (ImageView) result.view.findViewById(R.id.imageView1);
             image.setImageBitmap(result.bitmap);
 //        result.building.setBitmap(result.bitmap);
-            if(result.building.getBuildingId()!=null && result.bitmap!=null) {
+            if (result.building.getBuildingId() != null && result.bitmap != null) {
                 imageCache.put(result.building.getBuildingId(), result.bitmap);
             }
 //            imageCache.put(result.building.getBuildingId(), result.bitmap);

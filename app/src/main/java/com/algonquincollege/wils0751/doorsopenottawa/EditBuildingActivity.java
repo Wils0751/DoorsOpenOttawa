@@ -29,7 +29,7 @@ import com.algonquincollege.wils0751.doorsopenottawa.model.Building;
  * @author Shannon Wilson(Wils0751)
  */
 
-public class EditBuildingActivity extends AppCompatActivity{
+public class EditBuildingActivity extends AppCompatActivity {
     public static final String REST_URI = "https://doors-open-ottawa-hurdleg.mybluemix.net/buildings/";
     private EditText buildingDescription;
     private EditText buildingAddress;
@@ -38,7 +38,6 @@ public class EditBuildingActivity extends AppCompatActivity{
     public String Address;
     public String Description;
     public Integer buildingid;
-
 
 
     @Override
@@ -54,7 +53,7 @@ public class EditBuildingActivity extends AppCompatActivity{
 
             buildingid = buildingIdformMainActivity;
 
-            Log.e("Log",String.valueOf(buildingid));
+            Log.e("Log", String.valueOf(buildingid));
         }
 
 
@@ -78,6 +77,7 @@ public class EditBuildingActivity extends AppCompatActivity{
 
 
     }
+
     @Override
 
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -96,17 +96,18 @@ public class EditBuildingActivity extends AppCompatActivity{
         }
         return false;
     }
+
     private void deletePlanet(String uri) {
         RequestPackage pkg = new RequestPackage();
-        pkg.setMethod( HttpMethod.DELETE );
+        pkg.setMethod(HttpMethod.DELETE);
         // DELETE the planet with Id 8
         pkg.setUri(uri);
         DoTask deleteTask = new DoTask();
-        deleteTask.execute( pkg );
+        deleteTask.execute(pkg);
     }
-    private AlertDialog AskOption()
-    {
-        AlertDialog myQuittingDialogBox =new AlertDialog.Builder(this)
+
+    private AlertDialog AskOption() {
+        AlertDialog myQuittingDialogBox = new AlertDialog.Builder(this)
                 //set message, title, and icon
                 .setTitle("Delete")
                 .setMessage("Are you sure you want to delete this building?")
@@ -121,7 +122,6 @@ public class EditBuildingActivity extends AppCompatActivity{
                     }
 
                 })
-
 
 
                 .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
@@ -153,9 +153,10 @@ public class EditBuildingActivity extends AppCompatActivity{
         pkg.setParam("description", building.getDescription());
 
         DoTask putTask = new DoTask();
-        putTask.execute( pkg );
+        putTask.execute(pkg);
 
     }
+
     private class DoTask extends AsyncTask<RequestPackage, String, String> {
 
         @Override
@@ -180,7 +181,7 @@ public class EditBuildingActivity extends AppCompatActivity{
             if (result == null) {
                 Toast.makeText(EditBuildingActivity.this, "Web service not available", Toast.LENGTH_LONG).show();
                 return;
-            } else{
+            } else {
                 Log.e("Log", result);
             }
         }

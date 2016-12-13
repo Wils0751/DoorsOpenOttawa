@@ -85,14 +85,12 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 //        SharedPreferences prefs = getSharedPreferences(SHARED_PREFS_FILE, Context.MODE_PRIVATE);
-        SharedPreferences prefs = getSharedPreferences( getResources().getString(R.string.app_name), Context.MODE_PRIVATE );
+        SharedPreferences prefs = getSharedPreferences(getResources().getString(R.string.app_name), Context.MODE_PRIVATE);
 
         pb = (ProgressBar) findViewById(R.id.progressBar);
         pb.setVisibility(View.INVISIBLE);
 //        list=(ListView) findViewById(R.id.list);
         mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swiperefresh);
-
-
 
 
         tasks = new ArrayList<>();
@@ -174,7 +172,6 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
     }
 
 
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.isCheckable()) {
@@ -238,14 +235,11 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
     }
 
 
-
-
-
     protected void updateDisplay() {
         //Use BuildingAdapter to display data
 //        adapter = new BuildingAdapter(this, R.layout.item_building, buildingList);
 //        setListAdapter(adapter);
-        if(buildingList!=null) {
+        if (buildingList != null) {
             adapter = new BuildingAdapter(this, R.layout.item_building, buildingList);
             setListAdapter(adapter);
             searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
@@ -276,7 +270,6 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
             return false;
         }
     }
-
 
 
     private class MyTask extends AsyncTask<RequestPackage, String, List<Building>> {
@@ -316,6 +309,7 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
         }
 
     }
+
     private class DoTask extends AsyncTask<RequestPackage, String, String> {
 
         @Override
