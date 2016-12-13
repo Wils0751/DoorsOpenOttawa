@@ -109,7 +109,7 @@ public class EditBuildingActivity extends AppCompatActivity{
         AlertDialog myQuittingDialogBox =new AlertDialog.Builder(this)
                 //set message, title, and icon
                 .setTitle("Delete")
-                .setMessage("Do you want to Delete")
+                .setMessage("Are you sure you want to delete this building?")
 
 
                 .setPositiveButton("Delete", new DialogInterface.OnClickListener() {
@@ -124,7 +124,7 @@ public class EditBuildingActivity extends AppCompatActivity{
 
 
 
-                .setNegativeButton("cancel", new DialogInterface.OnClickListener() {
+                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
 
                         dialog.dismiss();

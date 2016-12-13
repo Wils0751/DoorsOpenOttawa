@@ -5,26 +5,26 @@
     density="560dpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="21472116018584"
+    timestamp="21899795104253"
     token="-4831305550388473472"
-    verifier="COMPATIBLE" >
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="163" />
+        duration="278" />
     <task
         name="instant-run-dex"
-        duration="7" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="17" />
+        duration="20" />
     <task
         name="verifier"
         duration="1" />
 
     <artifact
-        location="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/reload-dex/debug/classes.dex"
-        type="RELOAD_DEX" />
+        location="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
+        type="DEX" />
 
     <build
         timestamp="21313478266666"
@@ -34,25 +34,11 @@
             type="MAIN" />
     </build>
     <build
-        timestamp="21341484107498"
-        verifier="COMPATIBLE" >
+        timestamp="21899795104253"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
-            type="RESOURCES" />
-    </build>
-    <build
-        timestamp="21379531816332"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/builds/debug/21379531816332/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="21472116018584"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/reload-dex/debug/classes.dex"
-            type="RELOAD_DEX" />
+            location="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
+            type="DEX" />
     </build>
 
 </instant-run>
