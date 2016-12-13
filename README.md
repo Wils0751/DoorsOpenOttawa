@@ -1,33 +1,39 @@
 # DoorsOpenOttawa
-FR #1 - Swipe Down to Refresh
-    Status: complete
-    LOC: 20
 
-FR # 2 - Create a New Building
-    Status: complete
-    LOC: 250
+#### An application that loats data from a Restful API 
 
-FR # 3 - Update your Building
-    Status: Complete
-    LOC: 140
 
-FR # 4 - Upload a Photo for your Building 
-    Status:  not working
-    LOC: 20
+## 1: Swipe Down to Refresh
+#### Status: Complete
+LOC: 20
 
-FR # 5 - Delete Your Building
-    Status: complete
-    LOC: 80
+## 2: Create New Building
+#### Status: Complete
+LOC: 200
 
-FR # 6 - Favourite Building
-    Status: not working
-    LOC: 40
+## 3: Update Building
+#### Status: Complete
+LOC: 120
 
-FR # 7 - Sort Building Alphabetically
-    Status: complete
-    LOC: 20
+## 4: Upload a photo
+#### Status: Not working
+Just upload an image path not using the correct http aor using form data
+LOC: 20
 
-FR # 8 - Search for a Building
-    Status: complete
-    LOC: 35
+## 5: Delete a Building
+#### Status: Complete
+LOC: 80
+
+## 6: Favourite Buildings
+#### Status: Not working
+User's can favourite a building yet it is not storing to localstorage correctly users can scroll through list and the favourite building is persistant.
+LOC: 30
+
+## 7: Sort Buildings Alphabetically
+#### Status: Complete
+LOC: 20
+
+## 8: Search for a Building
+#### Status: Complete
+LOC: 35
 
