@@ -61,7 +61,9 @@ public class BuildingAdapter extends ArrayAdapter<Building> implements Filterabl
         this.buildingList = objects;
 
 
-
+        if (favouritelist == null) {
+            favouritelist = new ArrayList<>();
+        }
 
 
         final int maxMemory = (int) (Runtime.getRuntime().maxMemory() / 1024);
@@ -90,15 +92,15 @@ public class BuildingAdapter extends ArrayAdapter<Building> implements Filterabl
 
         tv.setText(building.getName());
         tv1.setText(building.getAddress());
+
+
         favourite.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked){
                     Log.e("LOG", "adding to arraylist");
 
-                    if (favouritelist == null) {
-                        favouritelist = new ArrayList<Integer>();
-                    }
+
                     favouritelist.add(buildingList.get(position).getBuildingId());
                     save_User_To_Shared_Prefs(context, favouritelist);
                     Log.e("Log",  "the number is " + favouritelist.contains(buildingList.get(position).getBuildingId()));
