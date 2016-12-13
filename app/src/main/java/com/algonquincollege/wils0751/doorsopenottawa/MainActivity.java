@@ -84,8 +84,6 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        SharedPreferences prefs = getSharedPreferences(SHARED_PREFS_FILE, Context.MODE_PRIVATE);
-        SharedPreferences prefs = getSharedPreferences(getResources().getString(R.string.app_name), Context.MODE_PRIVATE);
 
         pb = (ProgressBar) findViewById(R.id.progressBar);
         pb.setVisibility(View.INVISIBLE);
@@ -118,8 +116,6 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
 
                 Intent i = new Intent(getApplicationContext(), EditBuildingActivity.class);
                 i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-//                i.putExtra("description", theSelectedBuilding.getDescription());
-//                i.putExtra("address", theSelectedBuilding.getAddress());
                 i.putExtra("buildingid", theSelectedBuilding.getBuildingId());
 
                 startActivity(i);
@@ -146,7 +142,6 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
                 }
 
         );
-
 
         if (isOnline()) {
             requestData(REST_URI);
@@ -175,7 +170,6 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.isCheckable()) {
-            // leave if the list is null
             if (buildingList == null) {
                 return true;
             }
@@ -204,7 +198,6 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
                     break;
             }
             item.setChecked(true);
-            // re-fresh the list to show the sort order
             ((ArrayAdapter) getListAdapter()).notifyDataSetChanged();
         }
         if (item.getItemId() == R.id.action_about) {
@@ -236,9 +229,6 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
 
 
     protected void updateDisplay() {
-        //Use BuildingAdapter to display data
-//        adapter = new BuildingAdapter(this, R.layout.item_building, buildingList);
-//        setListAdapter(adapter);
         if (buildingList != null) {
             adapter = new BuildingAdapter(this, R.layout.item_building, buildingList);
             setListAdapter(adapter);
@@ -310,33 +300,6 @@ public class MainActivity extends ListActivity  /*implements AdapterView.OnItemC
 
     }
 
-    private class DoTask extends AsyncTask<RequestPackage, String, String> {
-
-        @Override
-        protected void onPreExecute() {
-//            pb.setVisibility(View.VISIBLE);
-
-        }
-
-        @Override
-        protected String doInBackground(RequestPackage... params) {
-
-            String content = HttpManager.getData(params[0], "wils0751", "password");
-
-            return content;
-        }
-
-        @Override
-        protected void onPostExecute(String result) {
-
-//            pb.setVisibility(View.INVISIBLE);
-
-            if (result == null) {
-                Toast.makeText(getApplicationContext(), "Web service not available", Toast.LENGTH_LONG).show();
-                return;
-            }
-        }
-    }
 //
 //
 //    @Override

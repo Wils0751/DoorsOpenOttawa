@@ -1,15 +1,11 @@
 package com.algonquincollege.wils0751.doorsopenottawa;
 
-import android.app.Activity;
+
 import android.content.DialogInterface;
-import android.content.Intent;
-import android.location.Address;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.text.style.BulletSpan;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -161,7 +157,6 @@ public class EditBuildingActivity extends AppCompatActivity {
 
         @Override
         protected void onPreExecute() {
-//            pb.setVisibility(View.VISIBLE);
 
         }
 
@@ -176,7 +171,6 @@ public class EditBuildingActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(String result) {
 
-//            pb.setVisibility(View.INVISIBLE);
 
             if (result == null) {
                 Toast.makeText(EditBuildingActivity.this, "Web service not available", Toast.LENGTH_LONG).show();

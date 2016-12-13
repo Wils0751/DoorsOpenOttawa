@@ -117,33 +117,7 @@ public class DetailActivity extends FragmentActivity implements OnMapReadyCallba
         }
     }
 
-    private class DoTask extends AsyncTask<RequestPackage, String, String> {
 
-        @Override
-        protected void onPreExecute() {
-//            pb.setVisibility(View.VISIBLE);
-
-        }
-
-        @Override
-        protected String doInBackground(RequestPackage... params) {
-
-            String content = HttpManager.getData(params[0], "wils0751", "password");
-
-            return content;
-        }
-
-        @Override
-        protected void onPostExecute(String result) {
-
-//            pb.setVisibility(View.INVISIBLE);
-
-            if (result == null) {
-                Toast.makeText(DetailActivity.this, "Web service not available", Toast.LENGTH_LONG).show();
-                return;
-            }
-        }
-    }
 }
 
 

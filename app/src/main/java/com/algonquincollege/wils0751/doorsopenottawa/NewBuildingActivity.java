@@ -3,16 +3,11 @@ package com.algonquincollege.wils0751.doorsopenottawa;
 import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.Color;
-import android.graphics.drawable.Drawable;
-import android.media.Image;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.support.v7.app.AppCompatActivity;
+
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -25,11 +20,7 @@ import com.algonquincollege.wils0751.doorsopenottawa.Utils.HttpMethod;
 import com.algonquincollege.wils0751.doorsopenottawa.Utils.RequestPackage;
 import com.algonquincollege.wils0751.doorsopenottawa.model.Building;
 
-import java.io.File;
 
-import static android.R.attr.button;
-import static android.R.attr.data;
-import static android.R.attr.start;
 
 /**
  * Allows the user to add a building to the list
@@ -98,7 +89,7 @@ public class NewBuildingActivity extends Activity {
 
                 Intent galleryIntent = new Intent(Intent.ACTION_GET_CONTENT);
                 galleryIntent.setType("image/*");
-// Start the Intent
+                // Start the Intent
                 startActivityForResult(galleryIntent, RESULT_LOAD_IMAGE);
             }
         });
@@ -186,7 +177,6 @@ public class NewBuildingActivity extends Activity {
 
         @Override
         protected void onPreExecute() {
-//            pb.setVisibility(View.VISIBLE);
 
         }
 
@@ -201,7 +191,6 @@ public class NewBuildingActivity extends Activity {
         @Override
         protected void onPostExecute(String result) {
 
-//            pb.setVisibility(View.INVISIBLE);
 
             if (result == null) {
                 Toast.makeText(NewBuildingActivity.this, "Web service not available", Toast.LENGTH_LONG).show();
@@ -210,40 +199,6 @@ public class NewBuildingActivity extends Activity {
         }
     }
 
-    private class MyTask extends AsyncTask<RequestPackage, Void, String> {
-
-        @Override
-        protected void onPreExecute() {
-//            pb.setVisibility(View.VISIBLE);
-
-        }
-
-        @Override
-        protected String doInBackground(RequestPackage... params) {
-
-            String content = HttpManager.getData(params[0], "wils0751", "password");
-
-            return content;
-
-
-        }
-
-        @Override
-        protected void onPostExecute(String result) {
-
-//            pb.setVisibility(View.INVISIBLE);
-
-            if (result == null) {
-                Toast.makeText(NewBuildingActivity.this, "Web service not available", Toast.LENGTH_LONG).show();
-
-
-                return;
-
-            } else {
-                Log.e("Log", result);
-            }
-        }
-    }
 }
 
 

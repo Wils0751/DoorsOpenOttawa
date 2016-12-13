@@ -5,7 +5,7 @@
     density="560dpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="28401435847983"
+    timestamp="30549974769902"
     token="-4831305550388473472"
     verifier="COLD_SWAP_REQUESTED" >
 
@@ -23,28 +23,14 @@
         duration="0" />
 
     <build
-        timestamp="21313478266666"
-        verifier="MANIFEST_FILE_CHANGE" >
+        timestamp="30346754421876"
+        verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="22928970959373"
-        verifier="R_CLASS_CHANGE" >
-        <artifact
-            location="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
-            type="RESOURCES" />
-    </build>
-    <build
-        timestamp="28082427024813"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
-            type="DEX" />
-    </build>
-    <build
-        timestamp="28401435847983"
+        timestamp="30549974769902"
         verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>
