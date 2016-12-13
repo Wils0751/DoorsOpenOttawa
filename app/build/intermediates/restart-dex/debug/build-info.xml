@@ -5,19 +5,19 @@
     density="560dpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="13997971703993"
+    timestamp="21472116018584"
     token="-4831305550388473472"
     verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="63" />
+        duration="163" />
     <task
         name="instant-run-dex"
-        duration="11" />
+        duration="7" />
     <task
         name="instant-run-transform"
-        duration="9" />
+        duration="17" />
     <task
         name="verifier"
         duration="1" />
@@ -27,48 +27,28 @@
         type="RELOAD_DEX" />
 
     <build
-        timestamp="6700556825466"
+        timestamp="21313478266666"
         verifier="MANIFEST_FILE_CHANGE" >
         <artifact
             location="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="7102629159208"
-        verifier="COLD_SWAP_REQUESTED" >
+        timestamp="21341484107498"
+        verifier="COMPATIBLE" >
         <artifact
             location="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
             type="RESOURCES" />
-        <artifact
-            location="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
-            type="DEX" />
     </build>
     <build
-        timestamp="9659832238399"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.6.2_432010c378e63d0262aabe45286b405d3a711d92/classes.dex"
-            type="DEX" />
-    </build>
-    <build
-        timestamp="13872254901865"
-        verifier="METHOD_DELETED" >
-        <artifact
-            location="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
-            type="DEX" />
-    </build>
-    <build
-        timestamp="13955639568588"
+        timestamp="21379531816332"
         verifier="COMPATIBLE" >
         <artifact
-            location="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/builds/debug/13955639568588/classes.dex"
+            location="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/builds/debug/21379531816332/classes.dex"
             type="RELOAD_DEX" />
     </build>
     <build
-        timestamp="13997971703993"
+        timestamp="21472116018584"
         verifier="COMPATIBLE" >
         <artifact
             location="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/intermediates/reload-dex/debug/classes.dex"

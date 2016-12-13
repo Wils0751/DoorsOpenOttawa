@@ -1,12 +1,18 @@
 package com.algonquincollege.wils0751.doorsopenottawa;
 
 import android.app.Activity;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.location.Address;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
 import android.text.style.BulletSpan;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -23,7 +29,7 @@ import com.algonquincollege.wils0751.doorsopenottawa.model.Building;
  * @author Shannon Wilson(Wils0751)
  */
 
-public class EditBuildingActivity extends Activity {
+public class EditBuildingActivity extends AppCompatActivity{
     public static final String REST_URI = "https://doors-open-ottawa-hurdleg.mybluemix.net/buildings/";
     private EditText buildingDescription;
     private EditText buildingAddress;
@@ -72,6 +78,64 @@ public class EditBuildingActivity extends Activity {
 
 
     }
+    @Override
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.detail, menu);
+
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.trash) {
+            AlertDialog dialog = AskOption();
+            dialog.show();
+//            deletePlanet(REST_URI + buildingid);
+
+        }
+        return false;
+    }
+    private void deletePlanet(String uri) {
+        RequestPackage pkg = new RequestPackage();
+        pkg.setMethod( HttpMethod.DELETE );
+        // DELETE the planet with Id 8
+        pkg.setUri(uri);
+        DoTask deleteTask = new DoTask();
+        deleteTask.execute( pkg );
+    }
+    private AlertDialog AskOption()
+    {
+        AlertDialog myQuittingDialogBox =new AlertDialog.Builder(this)
+                //set message, title, and icon
+                .setTitle("Delete")
+                .setMessage("Do you want to Delete")
+
+
+                .setPositiveButton("Delete", new DialogInterface.OnClickListener() {
+
+                    public void onClick(DialogInterface dialog, int whichButton) {
+                        deletePlanet(REST_URI + buildingid);
+                        dialog.dismiss();
+                        finish();
+                    }
+
+                })
+
+
+
+                .setNegativeButton("cancel", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+
+                        dialog.dismiss();
+
+                    }
+                })
+                .create();
+        return myQuittingDialogBox;
+
+    }
+
     private void updateBuilding(String uri) {
         Address = buildingAddress.getText().toString();
         Description = buildingDescription.getText().toString();

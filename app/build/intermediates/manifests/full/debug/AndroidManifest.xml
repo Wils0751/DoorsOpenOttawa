@@ -51,7 +51,9 @@
         </activity>
         <activity android:name="com.algonquincollege.wils0751.doorsopenottawa.NewBuildingActivity" >
         </activity>
-        <activity android:name="com.algonquincollege.wils0751.doorsopenottawa.EditBuildingActivity" >
+        <activity
+            android:name="com.algonquincollege.wils0751.doorsopenottawa.EditBuildingActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
         </activity>
         <!--
      ATTENTION: This was auto-generated to add Google Play services to your project for

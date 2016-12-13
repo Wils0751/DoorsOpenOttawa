@@ -32,7 +32,7 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyDfvAiRZepaWKjoQbctqgyOJh73A4oXdow" />
-        <activity android:name=".DetailActivity">
+        <activity android:name=".DetailActivity" >
 
             <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
             <uses-permission android:name="android.permission.INTERNET" />
@@ -41,7 +41,7 @@
 
 
         </activity>
-        <activity android:name=".EditBuildingActivity">
+        <activity android:name=".EditBuildingActivity" android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
 
 
         </activity>

@@ -82,65 +82,6 @@ public class DetailActivity extends FragmentActivity implements OnMapReadyCallba
         }
 
     }
-    @Override
-
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.detail, menu);
-
-    return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.trash) {
-//            AlertDialog dialog =  AskOption();
-//            dialog.show();
-//            deletePlanet(REST_URI + buildingid);
-
-        }
-
-
-        return false;
-    }
-    private void deletePlanet(String uri) {
-        RequestPackage pkg = new RequestPackage();
-        pkg.setMethod( HttpMethod.DELETE );
-        // DELETE the planet with Id 8
-        pkg.setUri(uri);
-        DoTask deleteTask = new DoTask();
-        deleteTask.execute( pkg );
-    }
-    private AlertDialog AskOption()
-    {
-        AlertDialog myQuittingDialogBox =new AlertDialog.Builder(this)
-                //set message, title, and icon
-                .setTitle("Delete")
-                .setMessage("Do you want to Delete")
-
-
-                .setPositiveButton("Delete", new DialogInterface.OnClickListener() {
-
-                    public void onClick(DialogInterface dialog, int whichButton) {
-                        deletePlanet(REST_URI + buildingid);
-                        dialog.dismiss();
-                    }
-
-                })
-
-
-
-                .setNegativeButton("cancel", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-
-                        dialog.dismiss();
-
-                    }
-                })
-                .create();
-        return myQuittingDialogBox;
-
-    }
-
 
     /**
      * Manipulates the map once available.
