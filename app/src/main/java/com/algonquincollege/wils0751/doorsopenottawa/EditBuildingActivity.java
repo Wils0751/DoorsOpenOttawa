@@ -31,9 +31,9 @@ public class EditBuildingActivity extends AppCompatActivity {
     private EditText buildingAddress;
     private Button savebtn;
     private Button cancelbtn;
-    public String Address;
-    public String Description;
-    public Integer buildingid;
+    private  String Address;
+    private String Description;
+    private Integer buildingid;
 
 
     @Override

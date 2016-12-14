@@ -42,11 +42,11 @@ public class DetailActivity extends FragmentActivity implements OnMapReadyCallba
     private TextView buildingName;
     private TextView buildingDescription;
     private TextView buildingHours;
-    public Integer buildingid;
+    private Integer buildingid;
     private String newStringBuildingAddress;
     private GoogleMap mMap;
     private Geocoder mGeocoder;
-    public static final String REST_URI = "https://doors-open-ottawa-hurdleg.mybluemix.net/buildings/";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

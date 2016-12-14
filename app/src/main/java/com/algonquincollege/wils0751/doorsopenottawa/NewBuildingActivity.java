@@ -33,12 +33,12 @@ public class NewBuildingActivity extends Activity {
     public static final String REST_URI_IMAGE = "http://doors-open-ottawa-hurdleg.mybluemix.net/buildings/";
     private static int RESULT_LOAD_IMAGE = 1;
     private static final String TAG = "";
-    public String name;
-    public String address;
-    public String description;
-    public ImageView buildingImage;
+    private String name;
+    private String address;
+    private String description;
+    private ImageView buildingImage;
 
-    public String thePath;
+    private String thePath;
     private Uri fullPhotoUri;
 
 
