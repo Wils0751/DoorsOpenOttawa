@@ -5,32 +5,33 @@
     density="560dpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="30549974769902"
+    timestamp="34614757924218"
     token="-4831305550388473472"
-    verifier="COLD_SWAP_REQUESTED" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="1000" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="324" />
     <task
         name="verifier"
-        duration="0" />
+        duration="47" />
+
+    <artifact
+        location="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
 
     <build
-        timestamp="30346754421876"
+        timestamp="34614757924218"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/ShannonWilson/Documents/Android/DoorsOpenOttawa/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
-    <build
-        timestamp="30549974769902"
-        verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>

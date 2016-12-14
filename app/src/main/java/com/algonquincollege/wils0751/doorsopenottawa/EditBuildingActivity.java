@@ -96,7 +96,7 @@ public class EditBuildingActivity extends AppCompatActivity {
     private void deletePlanet(String uri) {
         RequestPackage pkg = new RequestPackage();
         pkg.setMethod(HttpMethod.DELETE);
-        // DELETE the planet with Id 8
+
         pkg.setUri(uri);
         DoTask deleteTask = new DoTask();
         deleteTask.execute(pkg);
